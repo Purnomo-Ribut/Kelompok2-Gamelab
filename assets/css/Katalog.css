@@ -1,0 +1,25 @@
+/* Import Bootstrap */
+@import '~bootstrap/scss/bootstrap';
+
+/* Custom styles */
+body {
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter {
+  background-color: #fce4fc;
+  padding: 10px;
+}
+
+footer {
+  color: #fff;
+}
