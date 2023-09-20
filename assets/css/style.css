@@ -20,3 +20,55 @@
   color: black;
   padding: 10px 0;
 }
+
+/*tambahan*/
+/*style kotak 1*/
+.kotak1{
+  background-color: #FCE4FC;
+  border-radius: 200px 0 0 0 ;
+  height: 443PX;
+}
+.bkiri{
+  color: #152966;
+}
+.bkiri h2{
+  font-size: 40px;
+  font-weight: bold;
+}
+img.gambar{
+  height: 295px;
+  width: 285px;
+  margin-top: 70px;
+  margin-left: 70px;
+  border-radius: 180px 180px 0 0 ;
+/*  box-shadow: 100px 100px 100px 100px red;*/
+  box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.2);
+}
+button.shopnow{
+  background-color: #1C3575 ;
+  width: 214px;
+  height: 43px;
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+
+/*style kotek best seller*/
+img.gampro{
+  height: 350px;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+div.card-atas{
+  border: none;
+  
+}
+
+/*nama produk*/
+h5.nproduk{
+  color: #363D57;
+  font-weight: semi-bold;
+}
