@@ -21,10 +21,10 @@
   padding: 10px 0;
 }
 
-/*tambahan*/
+/*perubahan ke 2*/
 /*style kotak 1*/
 .kotak1{
-  background-color: #FCE4FC;
+  background-color: #E7C8E7;
   border-radius: 200px 0 0 0 ;
   height: 443PX;
 }
@@ -51,15 +51,27 @@ button.shopnow{
   color: white;
   border: none;
   border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
 /*style kotek best seller*/
+h2.seller{
+  letter-spacing: 3px;
+  font-family: Arial, sans-serif;
+  font-size: bold;
+  margin-bottom: 50px;
+}
 img.gampro{
   height: 350px;
   width: 300px;
   margin: auto;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.card-text{
+  margin: 0;
+  padding: 0;
 }
 
 div.card-atas{
@@ -72,3 +84,121 @@ h5.nproduk{
   color: #363D57;
   font-weight: semi-bold;
 }
+
+/*style kotak 2 section 3*/
+.kotak2{
+  background-color: #FCE4FC;
+  border-radius: 50px;
+  height: 443PX;
+}
+.kotakn{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 443px;
+
+}
+img.gambar2{
+  border-radius: 90px 0 90px 0;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  
+}
+.ktkanan{
+ color: #152966;
+ margin-left: 45px;
+
+}
+
+/*setting section 4*/
+img.gampro1{
+  height: 350px;
+  width: 300px;
+  margin: auto;
+  border-radius: 180px 180px 5px 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*setting kota 3*/
+.kotak3{
+  background-color: #FCE4FC;
+  border-radius: 50px ;
+  height: 443PX;
+  
+}
+
+img.gambar2{
+  height: 295px;
+  width: 285px;
+  margin-top: 70px;
+  margin-left: 70px;
+  border-radius: 90px 0px 150px 0 ;
+/*  box-shadow: 100px 100px 100px 100px red;*/  
+}
+
+img.gambar3{
+  height: 295px;
+  width: 285px;
+  margin-top: 70px;
+  margin-left: 70px;
+  border-radius: 90px 0px 90px 0 ;
+/*  box-shadow: 100px 100px 100px 100px red;*/  
+}
+
+/*section komentar*/
+#nampung{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    color: white;
+    gap: 20px;
+}
+#coment1 img{
+    border-radius: 100px;
+    height: 60px;
+    width: auto;
+}
+#coment1 p{
+   padding-left: 50px;
+   padding-right: 50px;
+   text-align: center;
+}
+#coment1{
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #293F7F;
+    width: 500px;
+    border-radius: 15px;
+}
+#isikata{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+/*footer*/
+.footer {  
+  padding: 20px;
+  color: #D97F16;
+  font-size: 14px;
+}
+
+.footer a {
+  color: white;  
+  text-decoration: none;
+}
+
+.info {
+  list-style: none;  
+  margin-left: -30px;
+}
+
+.footer a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+/*akhir perubahan sementara 2 */
