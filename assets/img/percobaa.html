@@ -1,1 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://kit.fontawesome.com/dcf3185087.js" crossorigin="anonymous"></script>
+    <style>
+        .logo-header {
+            width: 25px;
+        }
+
+        .navbar-brand {
+            font-size: 25px;
+            border-bottom: 1px solid black;
+            padding: 10px 0;
+        }
+
+        .nav-link {
+            /* text-align: center; */
+            justify-content: center;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-link a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 0;
+        }
+
+        .kotak1 {
+            background-color: #E7C8E7;
+            border-radius: 200px 0 0 0;
+            height: 443PX;
+        }
+
+        .bkiri {
+            color: #152966;
+        }
+
+        .bkiri h2 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        img.gambar {
+            height: 295px;
+            width: 285px;
+            margin-top: 70px;
+            margin-left: 70px;
+            border-radius: 180px 180px 0 0;
+            /*  box-shadow: 100px 100px 100px 100px red;*/
+            box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        button.shopnow {
+            background-color: #1C3575;
+            width: 214px;
+            height: 43px;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        h2.seller {
+            letter-spacing: 3px;
+            font-family: Arial, sans-serif;
+            font-size: bold;
+            margin-bottom: 50px;
+        }
+
+        img.gampro {
+            height: 350px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        div.card-atas {
+            border: none;
+
+        }
+
+        h5.nproduk {
+            color: #363D57;
+            font-weight: semi-bold;
+        }
+
+        .kotak2 {
+            background-color: #FCE4FC;
+            border-radius: 50px;
+            height: 443PX;
+        }
+
+        .kotakn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 443px;
+
+        }
+
+        img.gambar2 {
+            border-radius: 90px 0 90px 0;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+        }
+
+        .ktkanan {
+            color: #152966;
+            margin-left: 45px;
+
+        }
+
+        img.gampro1 {
+            height: 350px;
+            width: 300px;
+            margin: auto;
+            border-radius: 180px 180px 5px 5px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .kotak3 {
+            background-color: #FCE4FC;
+            border-radius: 50px;
+            height: 443PX;
+
+        }
+
+        img.gambar2 {
+            height: 295px;
+            width: 285px;
+            margin-top: 70px;
+            margin-left: 70px;
+            border-radius: 90px 0px 150px 0;
+            /*  box-shadow: 100px 100px 100px 100px red;*/
+        }
+
+        img.gambar3 {
+            height: 295px;
+            width: 285px;
+            margin-top: 70px;
+            margin-left: 70px;
+            border-radius: 90px 0px 90px 0;
+            /*  box-shadow: 100px 100px 100px 100px red;*/
+        }
+
+        #nampung {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            display: flex;
+            color: white;
+            gap: 20px;
+        }
+
+        #coment1 img {
+            border-radius: 100px;
+            height: 60px;
+            width: auto;
+        }
+
+        #coment1 p {
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+        }
+
+        #coment1 {
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+            background-color: #293F7F;
+            width: 500px;
+            border-radius: 15px;
+        }
+
+        #isikata {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin-bottom: 40px;
+            padding-top: 10px;
+            gap: 10px;
+        }
+
+        .footer {
+            padding: 20px;
+            color: #D97F16;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .info {
+            list-style: none;
+            margin-left: -30px;
+        }
+
+        .footer a:hover {
+            color: #ccc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="shadow fixed-top">
+            <div class="d-none d-md-block w-100 bg-dark text-light">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center py-1">
+                        <small>088273847932</small>
+                        <div class="medsos">
+                            <img src="./assets/icons/instagram-50.png" alt="logo" class="logo-header" />
+                            <img src="./assets/icons/tiktok-50.png" alt="logo" class="logo-header" />
+                            <img src="./assets/icons/shopee-50.png" alt="logo" class="logo-header" />
+                        </div>
+                        <small>test@mail.com</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navbar-brand text-center fw-semibold bg-light">
+                <span>MahiraCraft.id</span>
+            </div>
+            <div class="nav-link bg-light">
+                <a href="">Home</a>
+                <a href="">Katalog</a>
+                <a href="">Custom Order</a>
+                <a href="">About</a>
+            </div>
+        </nav>
+    </header>
+    </div>
+
+    <!-- tambahan -->
+    <section class="1" style="margin-top: 160px;">
+        <div class="container text-white kotak1">
+            <div class="row">
+                <div class="col-md-4 bkiri" style="margin-left: 110px; margin-top: 120px;">
+                    <h2>FLOWER <br>IS A PERFECT GIFT</h2>
+                    <p>A Special Gift for someone special to you. Customize your flower bouquet now at MaCraft</p>
+                    <button type="button" class="shopnow">SHOP NOW</button>
+                </div>
+                <div class="col-md-5 mx-auto">
+                    <img src="./assets/img/1.jpeg" alt="Gambar" class="gambar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="2 m-5">
+        <div class="container">
+            <h2 class="text-center seller">Best Seller</h2>
+            <div class="container">
+                <div class="row">
+                    <!-- gambar 1 -->
+                    <div class="col-md-4">
+                        <div class="card card-atas">
+                            <img src="./assets/img/2.jpeg" class="card-img-top gampro" alt="Produk">
+                            <div class="card-body">
+                                <h5 class="card-title nproduk">Nama Produk</h5>
+                                <p class="card-text">Kategori</p>
+                                <p class="card-text"><b>Rp 150.000</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gambar 2 -->
+                    <div class="col-md-4">
+                        <div class="card card-atas">
+                            <img src="./assets/img/3.jpeg" class="card-img-top gampro" alt="Produk">
+                            <div class="card-body">
+                                <h5 class="card-title nproduk">Nama Produk</h5>
+                                <p class="card-text">Kategori</p>
+                                <p class="card-text"><b>Rp 150.000</b></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gambar 3 -->
+                    <div class="col-md-4">
+                        <div class="card card-atas">
+                            <img src="./assets/img/4.jpeg" class="card-img-top gampro" alt="Produk">
+                            <div class="card-body ">
+                                <h5 class="card-title nproduk">Nama Produk</h5>
+                                <p class="card-text">Kategori</p>
+                                <p class="card-text"><b>Rp 150.000</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="3">
+        <div class="container kotak2">
+            <div class="row">
+                <div class="col-md-4 kotakn">
+                    <img src="./assets/img/4.jpeg" alt="Image" width="329px" class=" img-fluid gambar2">
+                </div>
+                <div class="col-md-6 py-5 ktkanan">
+                    <br>
+                    <h2 style="font-size: 40px ;">Budget Friendly</h2>
+                    <p style="font-size: 20px; font-weight:semi-bold ;" class="py-2 mb-4">Mau beli Bouquet tapi budget
+                        minim ? <br>Kamu bisa mendapatkan bouquet special mulai 25k !</p>
+                    <button type="button" class="shopnow">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-5">
+        <div class="container">
+            <h2 class="text-center seller">Our Product</h2>
+            <div class="container">
+                <div class="row">
+                    <!-- gambar 1 -->
+                    <div class="col-lg-4">
+                        <div class="card card-atas">
+                            <img src="./assets/img/2.jpeg" class="card-img-top gampro1" alt="Produk">
+                            <div class="card-body">
+                                <h5 class="card-title nproduk text-center">Nama Produk</h5>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gambar 2 -->
+                    <div class="col-lg-4">
+                        <div class="card card-atas">
+                            <img src="./assets/img/3.jpeg" class="card-img-top gampro1" alt="Produk">
+                            <div class="card-body">
+                                <h5 class="card-title nproduk text-center">Nama Produk</h5>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- gambar 3 -->
+                    <div class="col-lg-4">
+                        <div class="card card-atas">
+                            <img src="./assets/img/4.jpeg" class="card-img-top gampro1" alt="Produk">
+                            <div class="card-body ">
+                                <h5 class="card-title nproduk text-center">Nama Produk</h5>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <!-- Kolom Kiri -->
+                    <div class="col-md-6">
+                        <div class="card card-atas">
+                            <img src="./assets/img/2.jpeg" class="card-img-top gampro1 float-right" alt="Produk">
+                            <div class="card-body">
+                                <h5 class="card-title nproduk text-center">Nama Produk</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan -->
+                    <div class="col-md-6">
+                        <div class="card card-atas">
+                            <img src="./assets/img/3.jpeg" class="card-img-top gampro1 float-right " alt="Produk">
+                            <div class="card-body">
+                                <h5 class="card-title nproduk text-center">Nama Produk</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="1 m-5">
+        <div class="container text-white kotak3">
+            <div class="row">
+                <div class="col-md-4 bkiri" style="margin-left: 60px; margin-top: 60px;">
+                    <h2 class="mb-4">Our Studio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-md-5 mx-auto" style="position: relative;">
+                    <img src="./assets/img/5.jpeg" alt="Gambar" class="gambar2"
+                        style="position: absolute; top: 50px; left: 0; z-index: 2;">
+                    <img src="./assets/img/6.jpeg" alt="Gambar" class="gambar3"
+                        style="position: absolute; top: -25px; left: 160px; z-index: 1;">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="m-5">
+        <center>
+            <h1>Apa kata Customer Tentang
+                <br> MahirCraft.id?</h1>
+        </center>
+        <div id="nampung">
+            <div id="coment1">
+                <div id="isikata">
+                    <img src="./assets/img/3.jpeg" alt="...">
+                    <h4>@ahmad</h4>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, sit. Similique omnis, odio ipsum
+                    minus molestiae quibusdam officiis fugiat, pariatur quas voluptatibus, sapiente dolorem. Quod nisi
+                    eveniet tempore velit inventore!</p>
+            </div>
+            <div id="coment1">
+                <div id="isikata">
+                    <img src="./assets/img/3.jpeg" alt="...">
+                    <h4>@ahmad</h4>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, sit. Similique omnis, odio ipsum
+                    minus molestiae quibusdam officiis fugiat, pariatur quas voluptatibus, sapiente dolorem. Quod nisi
+                    eveniet tempore velit inventore!</p>
+            </div>
+            <div id="coment1">
+                <div id="isikata">
+                    <img src="./assets/img/3.jpeg" alt="...">
+                    <h4>@ahmad</h4>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia, sit. Similique omnis, odio ipsum
+                    minus molestiae quibusdam officiis fugiat, pariatur quas voluptatibus, sapiente dolorem. Quod nisi
+                    eveniet tempore velit inventore!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <!-- footer -->
+    <div class="footer bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h4>Alamat</h4>
+                    <p>Jl Pelabuhan Yogyakarta No 3</p>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Kategori</h4>
+                    <ul class="info ">
+                        <li><i class="fa-solid fa-circle" style="font-size: 10px;"></i> <a href=""> Bouquet</a></li>
+                        <li><i class="fa-solid fa-circle" style="font-size: 10px;"></i> <a href=""> Hampers</a></li>
+                        <li><i class="fa-solid fa-circle" style="font-size: 10px;"></i> <a href=""> Seserahan</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Kontak Kami</h4>
+                    <a href=""><i class="fa-brands fa-whatsapp" style="font-size: 35px;"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram" style="font-size: 35px;"></i></a>
+                </div>
+                <div class="col-lg-3">
+                    <!-- Kolom keempat -->
+                    <h4>Pembayaran</h4>
+                    <img src="./assets/img/7.png" alt="Gambar" width="80" height="23" class="mx-1 mb-1">
+                    <img src="./assets/img/8.png" alt="Gambar" width="80" height="23" class="mx-1 mb-1"> <br>
+                    <img src="./assets/img/9.png" alt="Gambar" width="80" height="23" class="mx-1">
+                    <img src="./assets/img/10.png" alt="Gambar" width="80" height="23">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/customOrder.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="shadow fixed-top">
+        <div class="d-none d-md-block w-100 bg-dark text-light">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-1">
+              <small>088273847932</small>
+              <div class="medsos">
+                <img
+                  src="./assets/icons/instagram-50.png"
+                  alt="logo"
+                  class="logo-header"
+                />
+                <img
+                  src="./assets/icons/tiktok-50.png"
+                  alt="logo"
+                  class="logo-header"
+                />
+                <img
+                  src="./assets/icons/shopee-50.png"
+                  alt="logo"
+                  class="logo-header"
+                />
+              </div>
+              <small>test@mail.com</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar-brand text-center fw-semibold bg-light">
+          <span>MahiraCraft.id</span>
+        </div>
+        <div class="nav-link bg-light">
+          <a href="/">Home</a>
+          <a href="">Katalog</a>
+          <a href="customOrder.html">Custom Order</a>
+          <a href="aboutUs.html">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- FLOWER SECTION -->
+    <section class="top-section">
+      <div class="container">
+        <h2 class="section-title">Make Your Own Bouquet!</h2>
+        <div class="garis"></div>
+        <div class="garis2"></div>
+
+        <div class="row mt-3">
+          <div class="col-6 col-md-4 mb-3">
+            <div class="card shadow">
+              <img src="./assets/img/bunga/mawar-merah.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Mawar Merah</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <div class="card shadow">
+              <img src="./assets/img/bunga/mawar-putih.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Mawar Putih</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <div class="card shadow">
+              <img src="./assets/img/bunga/matahari.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Bunga Matahari</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <div class="card shadow">
+              <img src="./assets/img/bunga/Hydrangea.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Bunga Hydrangea</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <div class="card shadow">
+              <img src="./assets/img/bunga/tulip.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Bunga Tulip</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 mb-3">
+            <div class="card shadow">
+              <img src="./assets/img/bunga/gerbera.png" alt="" />
+              <div class="card-body">
+                <h5 class="card-title text-center">Bunga Gerbera</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF FLOWER SECTION -->
+
+    <section class="form-section pt-5">
+      <div class="container">
+        <form action="">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Nama</label>
+                <input type="text" class="form-control" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label class="form-label">No.Telp</label>
+                <input type="number" min="0" class="form-control" />
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="mb-3">
+                <label class="form-label">Alamat pengiriman</label>
+                <textarea name="alamat" class="form-control"></textarea>
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-buket p-3">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Ukuran</label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">Small</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Large</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Kertas</label>
+                    <div class="input-group mb-3">
+                      <select class="form-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="1">Biru</option>
+                        <option value="2">Pink</option>
+                        <option value="3">Coklat</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Pilih Bunga</label>
+                    <div class="d-flex">
+                      <div class="row">
+                        <div class="col-6">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Mawar Merah</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Mawar Putih</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Tulip</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Matahari</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Pilih Snack</label>
+                    <div class="d-flex">
+                      <div class="row">
+                        <div class="col-6">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Beng-beng</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Silverqueen</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>TOP</label>
+                        </div>
+                        <div class="col-6">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Permen Kaki</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="mb-3">
+                    <label class="form-label">Pilih Pernak-pernik</label>
+                    <div class="d-flex">
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Boneka</label>
+                        </div>
+                        <div class="col-12">
+                          <input type="checkbox" class="form-check-input" />
+                          <label>Photocard</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn btn-primary">Pesan Sekarang</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="syarat mt-5">
+      <div class="container">
+        <h2 class="section-title mb-3">Syarat dan Ketentuan</h2>
+        <ul class="list-group">
+          <li class="list-group-item">
+            Setelah custom form di submit, MahiraCraft.id akan menghubungi Anda
+            melalui Whatsapp atau Email untuk konfirmasi pemesanan.
+          </li>
+          <li class="list-group-item">
+            Invoice akan dikirim melalui Whatsapp atau email setelah custom
+            order dikonfirmasi.
+          </li>
+          <li class="list-group-item">
+            Ketersediaan barang dapat berubah sewaktu-waktu.
+          </li>
+          <li class="list-group-item">
+            Tim kami akan menyesuaikan jumlah tangkai dengan ukuran yang Anda
+            pilih dan tidak dapat diubah.
+          </li>
+          <li class="list-group-item">
+            Silahkan hubungi kami lewat Whatsapp atau email untuk pertanyaan
+            lebih lanjut.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="reference mt-5">
+      <div class="container">
+        <h2 class="section-title">Reference</h2>
+        <div class="row">
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img src="./assets/img/1.jpeg" alt="reference" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img src="./assets/img/2.jpeg" alt="reference" />
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card">
+              <img src="./assets/img/2.jpeg" alt="reference" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

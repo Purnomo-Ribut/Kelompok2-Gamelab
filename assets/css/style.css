@@ -1,3 +1,4 @@
+/* NAVBAR */
 .logo-header {
   width: 25px;
 }
@@ -21,31 +22,53 @@
   padding: 10px 0;
 }
 
+/* TOP SECTION */
+.top-section {
+  margin-top: 120px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 25px;
+  color: #545454;
+  font-weight: 300;
+}
+
+@media only screen and (min-width: 600px) {
+  .top-section {
+    margin-top: 160px;
+  }
+
+  .section-title {
+    font-size: 35px;
+  }
+}
+
 /*tambahan*/
 /*style kotak 1*/
-.kotak1{
-  background-color: #FCE4FC;
-  border-radius: 200px 0 0 0 ;
-  height: 443PX;
+.kotak1 {
+  background-color: #fce4fc;
+  border-radius: 200px 0 0 0;
+  height: 443px;
 }
-.bkiri{
+.bkiri {
   color: #152966;
 }
-.bkiri h2{
+.bkiri h2 {
   font-size: 40px;
   font-weight: bold;
 }
-img.gambar{
+img.gambar {
   height: 295px;
   width: 285px;
   margin-top: 70px;
   margin-left: 70px;
-  border-radius: 180px 180px 0 0 ;
-/*  box-shadow: 100px 100px 100px 100px red;*/
+  border-radius: 180px 180px 0 0;
+  /*  box-shadow: 100px 100px 100px 100px red;*/
   box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.2);
 }
-button.shopnow{
-  background-color: #1C3575 ;
+button.shopnow {
+  background-color: #1c3575;
   width: 214px;
   height: 43px;
   color: white;
@@ -54,7 +77,7 @@ button.shopnow{
 }
 
 /*style kotek best seller*/
-img.gampro{
+img.gampro {
   height: 350px;
   width: 300px;
   margin: auto;
@@ -62,13 +85,12 @@ img.gampro{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-div.card-atas{
+div.card-atas {
   border: none;
-  
 }
 
 /*nama produk*/
-h5.nproduk{
-  color: #363D57;
+h5.nproduk {
+  color: #363d57;
   font-weight: semi-bold;
 }
