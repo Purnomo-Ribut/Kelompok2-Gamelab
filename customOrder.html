@@ -67,48 +67,54 @@
 
         <div class="row mt-3">
           <div class="col-6 col-md-4 mb-3">
-            <div class="card shadow">
-              <img src="./assets/img/bunga/mawar-merah.png" alt="" />
+            <div class="card shadow p-3">
+              <img
+                src="./assets/img/bunga/mawar-merah.png"
+                class="image-card"
+              />
               <div class="card-body">
                 <h5 class="card-title text-center">Mawar Merah</h5>
               </div>
             </div>
           </div>
           <div class="col-6 col-md-4 mb-3">
-            <div class="card shadow">
-              <img src="./assets/img/bunga/mawar-putih.png" alt="" />
+            <div class="card shadow p-3">
+              <img
+                src="./assets/img/bunga/mawar-putih.png"
+                class="image-card"
+              />
               <div class="card-body">
                 <h5 class="card-title text-center">Mawar Putih</h5>
               </div>
             </div>
           </div>
           <div class="col-6 col-md-4 mb-3">
-            <div class="card shadow">
-              <img src="./assets/img/bunga/matahari.png" alt="" />
+            <div class="card shadow p-3">
+              <img src="./assets/img/bunga/matahari.png" class="image-card" />
               <div class="card-body">
                 <h5 class="card-title text-center">Bunga Matahari</h5>
               </div>
             </div>
           </div>
           <div class="col-6 col-md-4 mb-3">
-            <div class="card shadow">
-              <img src="./assets/img/bunga/Hydrangea.png" alt="" />
+            <div class="card shadow p-3">
+              <img src="./assets/img/bunga/Hydrangea.png" class="image-card" />
               <div class="card-body">
                 <h5 class="card-title text-center">Bunga Hydrangea</h5>
               </div>
             </div>
           </div>
           <div class="col-6 col-md-4 mb-3">
-            <div class="card shadow">
-              <img src="./assets/img/bunga/tulip.png" alt="" />
+            <div class="card shadow p-3">
+              <img src="./assets/img/bunga/tulip.png" class="image-card" />
               <div class="card-body">
                 <h5 class="card-title text-center">Bunga Tulip</h5>
               </div>
             </div>
           </div>
           <div class="col-6 col-md-4 mb-3">
-            <div class="card shadow">
-              <img src="./assets/img/bunga/gerbera.png" alt="" />
+            <div class="card shadow p-3">
+              <img src="./assets/img/bunga/gerbera.png" class="image-card" />
               <div class="card-body">
                 <h5 class="card-title text-center">Bunga Gerbera</h5>
               </div>
@@ -121,136 +127,131 @@
 
     <!-- FORM SECTION -->
     <section class="form-section pt-5">
-      <div class="container">
-        <form action="">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div class="mb-3">
-                <label class="form-label">Nama</label>
-                <input type="text" class="form-control" />
+      <form action="">
+        <div class="custom-buket p-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Nama</label>
+                  <input type="text" class="form-control" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">No.Telp</label>
+                  <input type="number" min="0" class="form-control" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Alamat pengiriman</label>
+                  <textarea name="alamat" class="form-control"></textarea>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Ukuran</label>
+                  <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">Small</option>
+                      <option value="2">Medium</option>
+                      <option value="3">Large</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Kertas</label>
+                  <div class="input-group mb-3">
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">Biru</option>
+                      <option value="2">Pink</option>
+                      <option value="3">Coklat</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Pilih Bunga</label>
+                  <div class="d-flex">
+                    <div class="row">
+                      <div class="col-6">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Mawar Merah</label>
+                      </div>
+                      <div class="col-6">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Mawar Putih</label>
+                      </div>
+                      <div class="col-6">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Tulip</label>
+                      </div>
+                      <div class="col-6">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Matahari</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Pilih Snack</label>
+                  <div class="d-flex">
+                    <div class="row">
+                      <div class="col-6">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Beng-beng</label>
+                      </div>
+                      <div class="col-6">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Silverqueen</label>
+                      </div>
+                      <div class="col-6">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>TOP</label>
+                      </div>
+                      <div class="col-6">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Permen Kaki</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Pilih Pernak-pernik</label>
+                  <div class="d-flex">
+                    <div class="row">
+                      <div class="col-12">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Boneka</label>
+                      </div>
+                      <div class="col-12">
+                        <input type="checkbox" class="form-check-input" />
+                        <label>Photocard</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <div class="mb-3">
-                <label class="form-label">No.Telp</label>
-                <input type="number" min="0" class="form-control" />
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="mb-3">
-                <label class="form-label">Alamat pengiriman</label>
-                <textarea name="alamat" class="form-control"></textarea>
-              </div>
-            </div>
+
+            <button class="btn btn-primary">Pesan Sekarang</button>
           </div>
-
-          <div class="custom-buket p-3">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <div class="mb-3">
-                    <label class="form-label">Ukuran</label>
-                    <div class="input-group mb-3">
-                      <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Large</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <div class="mb-3">
-                    <label class="form-label">Kertas</label>
-                    <div class="input-group mb-3">
-                      <select class="form-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
-                        <option value="1">Biru</option>
-                        <option value="2">Pink</option>
-                        <option value="3">Coklat</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <div class="mb-3">
-                    <label class="form-label">Pilih Bunga</label>
-                    <div class="d-flex">
-                      <div class="row">
-                        <div class="col-6">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Mawar Merah</label>
-                        </div>
-                        <div class="col-6">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Mawar Putih</label>
-                        </div>
-                        <div class="col-6">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Tulip</label>
-                        </div>
-                        <div class="col-6">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Matahari</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <div class="mb-3">
-                    <label class="form-label">Pilih Snack</label>
-                    <div class="d-flex">
-                      <div class="row">
-                        <div class="col-6">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Beng-beng</label>
-                        </div>
-                        <div class="col-6">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Silverqueen</label>
-                        </div>
-                        <div class="col-6">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>TOP</label>
-                        </div>
-                        <div class="col-6">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Permen Kaki</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <div class="mb-3">
-                    <label class="form-label">Pilih Pernak-pernik</label>
-                    <div class="d-flex">
-                      <div class="row">
-                        <div class="col-12">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Boneka</label>
-                        </div>
-                        <div class="col-12">
-                          <input type="checkbox" class="form-check-input" />
-                          <label>Photocard</label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <button class="btn btn-primary">Pesan Sekarang</button>
-            </div>
-          </div>
-        </form>
-      </div>
+        </div>
+      </form>
     </section>
     <!-- END OF FORM SECTION -->
 
