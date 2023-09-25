@@ -50,6 +50,10 @@
         justify-content: center;
         align-items: center;
       }
+
+      #button1 #button :hover {
+        color: blue;
+      }
     </style>
   </head>
 
@@ -59,9 +63,33 @@
     <!-- About Us start-->
     <section class="container" style="margin-top: 160px">
       <div class="row">
+        <div class="col-12 col-md-4 aboutus-img">
+          <img
+            src="https://i.pinimg.com/736x/cc/53/b2/cc53b27699a7d89303f00dbf77ab066a.jpg"
+            alt="buckets"
+            class="w-100"
+          />
+        </div>
         <div class="col-12 col-md-8">
           <h2>About Us</h2>
-          <p style="text-align: justify">
+          <div
+            id="aboutUsPartial"
+            style="text-align: justify; max-height: 200px; overflow: hidden"
+          >
+            <!-- Hanya sebagian teks yang ditampilkan awalnya -->
+            MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
+            Seiring dengan waktu, kami telah menjadi pilihan favorit untuk para
+            pelanggan di seluruh Indonesia. Kami menawarkan kreasi buket yang
+            kreatif dan inovatif serta menyediakan pelayanan yang baik dan
+            ramah. Kami telah melakukan pengiriman ke berbagai wilayah di
+            seluruh Indonesia, seperti pulau Sumatera, Jawa, Bali, dan
+            Kalimantan. Kami berkomitmen untuk memberikan produk berkualitas dan
+            pengiriman tepat waktu dengan harga yang kompetitif.
+          </div>
+          <div id="aboutUsFull" style="text-align: justify; display: none">
+            <!-- Teks lengkap yang akan ditampilkan setelah diklik -->
+            MahirCraft.id selalu berusaha memberikan kepuasan pelanggan dengan
+            memberikan yang terbaik dari pilihan bunga yang digunakan.
             MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
             Seiring dengan waktu, kami telah menjadi pilihan favorit untuk para
             pelanggan di seluruh Indonesia. Kami menawarkan kreasi buket yang
@@ -80,28 +108,51 @@
             pelanggan adalah prioritas utama bagi kami di MahirCraft.id. Kami
             menantikan untuk melayani kebutuhan buket yang Anda butuhkan. Terima
             kasih telah mempercayakan MahirCraft.id sebagai pilihan Anda.
-          </p>
-        </div>
-        <div class="col-12 col-md-4">
-          <img
-            src="https://i.pinimg.com/736x/cc/53/b2/cc53b27699a7d89303f00dbf77ab066a.jpg"
-            alt="buckets"
-            class="w-100"
-          />
+          </div>
+          <a
+            id="button2"
+            onclick="showFullText()"
+            style="cursor: pointer; text-decoration: underline"
+            >Lihat Selengkapnya</a
+          >
         </div>
       </div>
     </section>
     <!-- ABout Us end -->
 
     <!-- Story Start -->
-    <section class="container" style="margin-top: 50px">
+    <section
+      class="container"
+      style="margin-top: 50px; background-color: #fce4cf"
+    >
       <div class="row">
         <div class="col-12 col-md-4">
-          <img src="./assets/img/logoMacraft.png" alt="buckets" class="w-100" />
+          <img
+            src="./assets/img/logoMacraft.png"
+            alt="buckets"
+            class="w-100"
+            style="padding: 20px"
+          />
         </div>
         <div class="col-12 col-md-8">
           <h2>Story</h2>
-          <p style="text-align: justify">
+          <div
+            id="storyPartial"
+            style="text-align: justify; max-height: 200px; overflow: hidden"
+          >
+            <!-- Hanya sebagian teks yang ditampilkan awalnya -->
+            MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
+            senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
+            dan seni dekorasi bunga. Kegemaran ini mendapat pengakuan, dan
+            MahirCraft.id kini dikenal sebagai toko buket terpercaya secara
+            nasional. Kami selalu berkomitmen memberikan kreasi bunga
+            berkualitas tinggi dengan harga terjangkau, siap melayani pelanggan
+            di seluruh Indonesia. Harapan kami adalah membawa kebahagiaan
+            melalui cinta dan dedikasi kami pada bunga dalam acara penting
+            pelanggan kami.
+          </div>
+          <div id="storyFull" style="text-align: justify; display: none">
+            <!-- Teks lengkap yang akan ditampilkan setelah diklik -->
             MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
             senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
             dan seni dekorasi bunga. Kegemaran ini mendapat pengakuan, dan
@@ -122,7 +173,13 @@
             berharga dalam hidup pelanggan kami, seperti pernikahan, acara
             kondangan, atau ulang tahun. Dengan semangat ini, kami berkomitmen
             untuk terus memberikan yang terbaik dalam dunia bunga dan dekorasi.
-          </p>
+          </div>
+          <a
+            id="button1"
+            onclick="showFullStory()"
+            style="cursor: pointer; text-decoration: underline"
+            >Lihat Selengkapnya</a
+          >
         </div>
       </div>
     </section>
@@ -144,9 +201,9 @@
                   alt=""
                 />Customer Satisfaction
               </h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-text" style="text-align: justify">
+                Kepuasan pelanggan adalah tujuan kami. kami berusaha untuk ramah
+                dan memproses pesanan pelanggan dengan cepat.
               </p>
             </div>
           </div>
@@ -163,9 +220,9 @@
                   alt=""
                 />Delivery Safety
               </h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-text" style="text-align: justify">
+                Kami memiliki beberapa kerja sama dengan layanan jasa kirim yang
+                ada di Indonesia, jadi pengiriman bisa lebih aman.
               </p>
             </div>
           </div>
@@ -177,14 +234,14 @@
                 <img
                   width="100px"
                   height="100px"
-                  style="margin-right: 10px"
+                  style="margin-right: 15px"
                   src="https://img.freepik.com/free-vector/get-touch-concept-illustration_114360-2726.jpg?size=626&ext=jpg&uid=R58077014&semt=ais"
                   alt=""
                 />Custom Request
               </h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <p class="card-text" style="text-align: justify">
+                Customer bebas Request, tersedia berbagai macam ornament, semua
+                kebutuhan bouquet bisa kami penuhi dengan maksimal.
               </p>
             </div>
           </div>
@@ -192,6 +249,7 @@
       </div>
     </section>
     <!-- End Values -->
+
     <!-- Start Faq -->
     <section class="container mt-5">
       <h2 style="text-align: center">faQ</h2>
@@ -292,41 +350,71 @@
 
     <!-- start e-comerce -->
     <section class="container mb-5 mt-5">
-      <h2 style="text-align: center">Avaliable On</h2>
+      <h2 style="text-align: center">Available On</h2>
       <div class="container saru">
-        <div class="row">
+        <div class="row justify-content-center">
+          <!-- Tambahkan class justify-content-center untuk membuat kartu berada di tengah -->
           <div class="col-6 col-md-4">
-            <div class="card">
+            <div class="card" style="margin-bottom: 10px;">
+              <center>
               <img
                 src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo-0.png"
                 class="card-img-top"
-                alt="..."
+                alt="Shopee"
+                style="width: 100px; height: auto"
               />
               <div class="card-body">
-                <h5 class="card-title">Shopee</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary mt-2">Kunjungi</a>
+                <h5
+                  class="card-title"
+                  style="width: 200px; height: auto; margin-bottom: 5px"
+                >
+                  Shopee
+                </h5>
+                <a href="https://shopee.co.id/mahircrafts.id" target="_blank" class="btn btn-primary mt-2">Visit</a>
               </div>
+            </center>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="card" style="margin-bottom: 10px;">
+              <center>
+              <img
+                src="https://assets-a1.kompasiana.com/items/album/2022/06/15/picsart-22-06-15-19-29-55-853-62a9d0d3fdcdb43f623bb7f2.jpg?t=o&v=770"
+                class="card-img-top"
+                alt="Tiktok Shop"
+                style="width: 100px"
+              />
+              <div class="card-body">
+                <h5
+                  class="card-title"
+                  style="width: 200px; height: auto; margin-bottom: 5px"
+                >
+                  Tiktok Shop
+                </h5>
+                <a href="https://tiktok.com/@mahircraftbyalma" target="_blank" class="btn btn-primary mt-2">Visit</a>
+              </div>
+            </center>
             </div>
           </div>
           <div class="col-6 col-md-4">
             <div class="card">
+              <center>
               <img
-                src="https://assets-a1.kompasiana.com/items/album/2022/06/15/picsart-22-06-15-19-29-55-853-62a9d0d3fdcdb43f623bb7f2.jpg?t=o&v=770"
+                src="https://img.freepik.com/premium-vector/instagram-app-icon-social-media-logo-vector-illustration_277909-403.jpg"
                 class="card-img-top"
-                alt="..."
+                alt="Instagram"
+                style="width: 85px; height: auto; ;"
               />
-              <div class="card-body">
-                <h5 class="card-title">Tiktok Shop</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary mt-2">Kunjungi</a>
+              <div class="card-body mt-3">
+                <h5
+                  class="card-title"
+                  style="width: 200px; height: auto; margin-bottom: 5px"
+                >
+                  Instagram
+                </h5>
+                <a href="https://instagram.com/mahircraft.id?igshid=MzRlODBiNWFlZA==" target="_blank" class="btn btn-primary mt-2">Visit</a>
               </div>
+            </center>
             </div>
           </div>
         </div>
@@ -339,5 +427,27 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script type="text/javascript">
+      var aboutUsPartial = document.getElementById("aboutUsPartial");
+      var aboutUsFull = document.getElementById("aboutUsFull");
+      var showFullTextButton = document.getElementById("button2");
+
+      function showFullText() {
+        aboutUsPartial.style.display = "none";
+        aboutUsFull.style.display = "block";
+        showFullTextButton.style.display = "none";
+      }
+
+      var storyPartial = document.getElementById("storyPartial");
+      var storyFull = document.getElementById("storyFull");
+      var showFullStoryButton = document.getElementById("button1");
+
+      function showFullStory() {
+        storyPartial.style.display = "none";
+        storyFull.style.display = "block";
+        showFullStoryButton.style.display = "none";
+      }
+    </script>
   </body>
 </html>
