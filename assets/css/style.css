@@ -41,14 +41,16 @@
   transition: 0.4s;
 }
 
-.active .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
+.active.bar1 {
+  transform: translate(0, 5px) rotate(-45deg);
 }
-.active .bar2 {
+
+.active.bar2 {
   opacity: 0;
 }
-.active .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+
+.active.bar3 {
+  transform: translate(0, -10px) rotate(45deg);
 }
 
 /* TOP SECTION */

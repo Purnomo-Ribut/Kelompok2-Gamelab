@@ -40,15 +40,16 @@ $(document).ready(function () {
         </div>
 
         <div class="hamburger bg-light d-md-none">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
         </div>
       </nav>
   `);
 
     $('.hamburger').click(function () {
       $('.nav-link').toggleClass('d-none');
+      $('span').toggleClass('active');
     });
   }
 
