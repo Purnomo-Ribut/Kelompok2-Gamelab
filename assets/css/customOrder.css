@@ -23,9 +23,6 @@
 .image-card {
   width: 40%;
   margin: auto;
-}
-
-.image-card {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
@@ -42,12 +39,12 @@
   .garis {
     width: 500px;
   }
-
   .garis2 {
     width: 300px;
   }
-
   .image-card {
     width: 50%;
   }
 }
+
+/*# sourceMappingURL=customOrder.css.map */
