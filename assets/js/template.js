@@ -29,7 +29,7 @@ $(document).ready(function () {
         </div>
 
         <div class="navbar-brand text-center fw-semibold bg-light">
-          <span>MahiraCraft.id</span>
+          <span>MahirCraft.id</span>
         </div>
         <div class="nav-link bg-light d-none flex-column d-md-flex flex-md-row">
           <a href="index.html">Home</a>
