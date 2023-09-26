@@ -327,47 +327,7 @@
         width: 300px;
       }
 
-      @media (max-width: 768px) {
-        /*ikon*/
-        .isicon {
-          margin-top: 19px;
-          justify-content: left;
-          align-items: left;
-          text-align: left;
-          display: inline;
-          gap: 0px;
-          width: 100%;
-          margin-bottom: 0;
-        }
-
-        .isicontainer {
-          margin-top: 19px;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          display: flex;
-          gap: 50px;
-          margin-left: 34%;
-          margin-bottom: 19px;
-        }
-
-        .ikon {
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          width: 50px;
-        }
-
-        .cahaya {
-          width: 60px;
-          height: 60px;
-          background-color: E7C8E7;
-          border-radius: 50%;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-          font-size: 40px;
-        }
+      @media (max-width: 1000px) {
 
         /*isi konten pertama*/
         .gabung {
@@ -453,6 +413,44 @@
           font-size: 29px;
           width: 500px;
           margin-top: 19px;
+        }
+      }
+      @media (max-width:768px){
+        .isicon{
+          margin-top: 19px;
+          justify-content: left;
+          align-items: left;
+          text-align: left;
+          display: inline;
+          gap: 0px;
+          width: 100%;
+          margin-bottom: 0;
+        }
+      .isicontainer{
+          margin-top: 19px;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          display: flex;
+          gap: 50px;
+          margin-left: 34%;
+          margin-bottom: 19px;
+        }
+        .ikon{
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          width: 50px;
+        }
+        .cahaya{
+          width: 60px;
+          height: 60px;
+          background-color: E7C8E7;
+          border-radius: 50%;
+          justify-content: center;
+          align-items: center;
+          display: flex;
+          font-size: 40px;
         }
       }
     </style>
@@ -624,40 +622,40 @@
       </section>
     </section>
     <script>
-      let slideIndex = 1;
-      showSlide(slideIndex);
+      let slideIndex = 1; 
+        showSlide(slideIndex); 
+function showSlide(n) {
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
 
-      function showSlide(n) {
-        let i;
-        let slides = document.getElementsByClassName('slide');
-        let dots = document.getElementsByClassName('dot');
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = 'none';
-        }
-        slides[slideIndex - 1].style.display = 'block';
+    if (dots.length > 0) {
         for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(' active', '');
+            dots[i].className = dots[i].className.replace(" active", "");
         }
-        dots[slideIndex - 1].className += ' active';
-      }
+        dots[slideIndex - 1].className += " active";
+    }
+}
 
-      function prevSlide() {
-        showSlide((slideIndex -= 1));
-      }
-
-      function nextSlide() {
-        showSlide((slideIndex += 1));
-      }
-
-      function currentSlide(n) {
-        showSlide((slideIndex = n));
-      }
+function prevSlide() {
+    showSlide(slideIndex -= 1);
+}
+function nextSlide() {
+    showSlide(slideIndex += 1);
+}
+function currentSlide(n) {
+    showSlide(slideIndex = n);
+}
     </script>
   </body>
 </html>
