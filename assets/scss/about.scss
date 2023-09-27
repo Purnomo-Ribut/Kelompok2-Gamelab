@@ -1,0 +1,73 @@
+.container #about {
+    margin-top: 160px
+}
+
+div #aboutUsPartial {
+    text-align: justify;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+div #aboutUsFull {
+    text-align: justify;
+    display: none;
+}
+
+a #button2 {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container #story {
+    margin-top: 50px;
+    background-color: #fce4cf;
+}
+
+div #storyPartial {
+    text-align: justify;
+    max-height: 200px;
+    overflow: hidden
+}
+
+div #storyFull {
+    text-align: justify;
+    display: none;
+}
+
+a #button1 {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.container #value {
+    margin-top: 50px
+}
+
+.card-body img {
+    margin-right: 15px;
+    width : 100px;
+    height:100px;
+}
+
+.saru {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.saru img {
+    width: 100px;
+    height: auto;
+}
+
+img #ig {
+    width: 85px;
+    height: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+p .card-text {
+    text-align: justify;
+}
