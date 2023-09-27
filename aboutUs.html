@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/about.css">
     <script
       src="https://kit.fontawesome.com/dcf3185087.js"
       crossorigin="anonymous"
@@ -20,6 +21,7 @@
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
+  
     <script src="./assets/js/template.js"></script>
     <style>
       .logo-header {
@@ -61,7 +63,7 @@
     <header></header>
 
     <!-- About Us start-->
-    <section class="container" style="margin-top: 160px">
+    <section class="container" id="about" style="margin-top: 160px">
       <div class="row">
         <div class="col-12 col-md-4 aboutus-img">
           <img
@@ -74,7 +76,6 @@
           <h2>About Us</h2>
           <div
             id="aboutUsPartial"
-            style="text-align: justify; max-height: 200px; overflow: hidden"
           >
             <!-- Hanya sebagian teks yang ditampilkan awalnya -->
             MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
@@ -86,7 +87,7 @@
             Kalimantan. Kami berkomitmen untuk memberikan produk berkualitas dan
             pengiriman tepat waktu dengan harga yang kompetitif.
           </div>
-          <div id="aboutUsFull" style="text-align: justify; display: none">
+          <div id="aboutUsFull">
             <!-- Teks lengkap yang akan ditampilkan setelah diklik -->
             MahirCraft.id selalu berusaha memberikan kepuasan pelanggan dengan
             memberikan yang terbaik dari pilihan bunga yang digunakan.
@@ -112,7 +113,6 @@
           <a
             id="button2"
             onclick="showFullText()"
-            style="cursor: pointer; text-decoration: underline"
             >Lihat Selengkapnya</a
           >
         </div>
@@ -122,8 +122,7 @@
 
     <!-- Story Start -->
     <section
-      class="container"
-      style="margin-top: 50px; background-color: #fce4cf"
+      class="container" id="story"
     >
       <div class="row">
         <div class="col-12 col-md-4">
@@ -138,7 +137,6 @@
           <h2>Story</h2>
           <div
             id="storyPartial"
-            style="text-align: justify; max-height: 200px; overflow: hidden"
           >
             <!-- Hanya sebagian teks yang ditampilkan awalnya -->
             MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
@@ -151,7 +149,7 @@
             melalui cinta dan dedikasi kami pada bunga dalam acara penting
             pelanggan kami.
           </div>
-          <div id="storyFull" style="text-align: justify; display: none">
+          <div id="storyFull">
             <!-- Teks lengkap yang akan ditampilkan setelah diklik -->
             MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
             senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
@@ -177,7 +175,6 @@
           <a
             id="button1"
             onclick="showFullStory()"
-            style="cursor: pointer; text-decoration: underline"
             >Lihat Selengkapnya</a
           >
         </div>
@@ -186,8 +183,8 @@
     <!-- story End -->
 
     <!-- Value Start -->
-    <section class="container" style="margin-top: 50px">
-      <h2 style="text-align: center">Our values</h2>
+    <section class="container" id="value">
+      <h2>Our values</h2>
       <div class="row">
         <div class="col-12 col-md-4">
           <div class="card border-dark mb-3" style="max-width: 25rem">
@@ -196,12 +193,11 @@
                 <img
                   width="100px"
                   height="100px"
-                  style="margin-right: 10px"
                   src="https://img.freepik.com/free-vector/organic-flat-feedback-concept-illustrated_23-2148951369.jpg?t=st=1695219020~exp=1695219620~hmac=11f3467487463783bf43228f6a1177c2fa7d22bd1b73d2415c872459207d4513"
                   alt=""
                 />Customer Satisfaction
               </h5>
-              <p class="card-text" style="text-align: justify">
+              <p class="card-text">
                 Kepuasan pelanggan adalah tujuan kami. kami berusaha untuk ramah
                 dan memproses pesanan pelanggan dengan cepat.
               </p>
@@ -215,12 +211,11 @@
                 <img
                   width="100px"
                   height="100px"
-                  style="margin-right: 10px"
                   src="https://img.freepik.com/free-vector/cute-male-courier-delivery-package-with-motorcycle-cartoon-vector-icon-illustration-people-job_138676-5708.jpg?size=626&ext=jpg&uid=R58077014&semt=sph"
                   alt=""
                 />Delivery Safety
               </h5>
-              <p class="card-text" style="text-align: justify">
+              <p class="card-text">
                 Kami memiliki beberapa kerja sama dengan layanan jasa kirim yang
                 ada di Indonesia, jadi pengiriman bisa lebih aman.
               </p>
@@ -234,12 +229,11 @@
                 <img
                   width="100px"
                   height="100px"
-                  style="margin-right: 15px"
                   src="https://img.freepik.com/free-vector/get-touch-concept-illustration_114360-2726.jpg?size=626&ext=jpg&uid=R58077014&semt=ais"
                   alt=""
                 />Custom Request
               </h5>
-              <p class="card-text" style="text-align: justify">
+              <p class="card-text">
                 Customer bebas Request, tersedia berbagai macam ornament, semua
                 kebutuhan bouquet bisa kami penuhi dengan maksimal.
               </p>
@@ -252,7 +246,7 @@
 
     <!-- Start Faq -->
     <section class="container mt-5">
-      <h2 style="text-align: center">faQ</h2>
+      <h2>faQ</h2>
 
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
@@ -350,7 +344,7 @@
 
     <!-- start e-comerce -->
     <section class="container mb-5 mt-5">
-      <h2 style="text-align: center">Available On</h2>
+      <h2>Available On</h2>
       <div class="container saru">
         <div class="row justify-content-center">
           <!-- Tambahkan class justify-content-center untuk membuat kartu berada di tengah -->
@@ -360,12 +354,10 @@
                 src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo-0.png"
                 class="card-img-top"
                 alt="Shopee"
-                style="width: 100px; height: auto"
               />
               <div class="card-body">
                 <h5
                   class="card-title"
-                  style="width: 200px; height: auto; margin-bottom: 5px"
                 >
                   Shopee
                 </h5>
@@ -384,12 +376,10 @@
                 src="https://assets-a1.kompasiana.com/items/album/2022/06/15/picsart-22-06-15-19-29-55-853-62a9d0d3fdcdb43f623bb7f2.jpg?t=o&v=770"
                 class="card-img-top"
                 alt="Tiktok Shop"
-                style="width: 100px"
               />
               <div class="card-body">
                 <h5
                   class="card-title"
-                  style="width: 200px; height: auto; margin-bottom: 5px"
                 >
                   Tiktok Shop
                 </h5>
@@ -405,6 +395,7 @@
           <div class="col-6 col-md-4">
             <div class="card">
               <img
+                id="ig"
                 src="https://img.freepik.com/premium-vector/instagram-app-icon-social-media-logo-vector-illustration_277909-403.jpg"
                 class="card-img-top"
                 alt="Instagram"
@@ -413,7 +404,6 @@
               <div class="card-body mt-3">
                 <h5
                   class="card-title text-left"
-                  style="width: 200px; height: auto; margin-bottom: 5px"
                 >
                   Instagram
                 </h5>
