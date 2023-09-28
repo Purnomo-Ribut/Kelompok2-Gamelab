@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$primaryFont: 'Roboto', sans-serif;
+
+body {
+    font-family: $primaryFont;
+}
+
 .logo-header {
     width: 25px;
 }
