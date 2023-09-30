@@ -1,86 +1,124 @@
 $margin-top: 160px;
-$max-height: 200px;
+// $max-height: 200px;
 $primary-color: #fce4cf;
 
-.container {
-  #about {
-    margin-top: $margin-top;
-  }
-
-  #story {
-    margin-top: 50px;
-    background-color: $primary-color;
-  }
-
-  #value {
-    margin-top: 50px;
-  }
+// Deklarasi fungsi dengan @function
+@function calculateMaxHeight($originalHeight) {
+  
+  @return $originalHeight * 1.5;
 }
 
-div {
-  #aboutUsPartial,
-  #storyPartial {
-    text-align: justify;
-    max-height: $max-height;
-    overflow: hidden;
-  }
+// Menggunakan fungsi untuk menghitung nilai $max-height
+$max-height: calculateMaxHeight(200px);
 
-  #aboutUsFull,
-  #storyFull {
-    text-align: justify;
-    display: none;
-  }
+#aboutUsPartial,
+#storyPartial {
+  text-align: justify;
+  max-height: $max-height;
+  overflow: hidden;
 }
 
-a {
-  #button2 {
-    cursor: pointer;
-    text-decoration: underline;
-  }
-
-  #button1 {
-    cursor: pointer;
-    text-decoration: underline;
-  }
+#about {
+  margin-top: $margin-top;
 }
 
-.card-body {
-  img {
-    margin-right: 15px;
-    width: 100px;
-    height: 100px;
-  }
+#story {
+  margin-top: 50px;
+  background-color: $primary-color;
+}
+
+#value {
+  margin-top: 50px;
+}
+
+// #aboutUsPartial,
+// #storyPartial {
+//   text-align: justify;
+//   max-height: $max-height;
+//   overflow: hidden;
+// }
+
+#aboutUsFull,
+#storyFull {
+  text-align: justify;
+  display: none;
+}
+
+#button2 {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#button1 {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+img {
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
 }
 
 .saru {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img {
-    width: 100px;
-    height: auto;
+  .card {
+    border: none; // Hapus border
+    img {
+      border-radius: 0; // Hilangkan border-radius
+    }
   }
 }
 
 img {
-  #ig {
-    width: 85px;
-    height: auto;
-  }
+  width: 100px;
+  height: auto;
+}
+
+#ig {
+  width:100px;
+  height: auto;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#tt {
+  width: 85px;
+  height: auto;
+  padding: 10px;
+  margin-left: 15px;
+}
+
+#shopee {
+  width: 85px;
+  height: auto;
+  padding: 10px;
+  margin-left: 15px;
 }
 
 h2 {
   text-align: center;
 }
 
-p {
-  .card-text {
-    text-align: justify;
-  }
+.card-text {
+  text-align: justify;
+}
+
+#Available {
+  background-color: #dc32e2;
 }
 
 #faq {
-    $primary-color: #dc32e2;
-    background-color: $primary-color ;
+  $primary-color: #dc32e2;
+  background-color: $primary-color;
+}
+
+#button1:hover {
+  text-decoration: blue;
+}
+
+.widget {
+  margin-top: 20px;
 }
