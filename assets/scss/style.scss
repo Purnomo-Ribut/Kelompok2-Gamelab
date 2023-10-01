@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 $primaryFont: 'Roboto', sans-serif;
+$fontSize: (
+    'large': 35px,
+    'medium': 25px,
+    'small': 15px
+);
+
+@function size($sizeName) {
+    @return map-get($fontSize, $sizeName);
+}
 
 body {
     font-family: $primaryFont;
@@ -11,7 +20,7 @@ body {
 }
 
 .navbar-brand {
-    font-size: 25px;
+    font-size: size(medium);
     border-bottom: 1px solid black;
     padding: 10px 0;
 }
@@ -70,7 +79,7 @@ body {
     margin-top: 120px;
 
     .section-title {
-        font-size: 25px;
+        font-size: size(medium);
         color: #545454;
         font-weight: 300;
     }
@@ -81,7 +90,7 @@ body {
         margin-top: 160px;
 
         .section-title {
-            font-size: 35px;
+            font-size: size(large);
         }
     }
 
