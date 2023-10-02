@@ -1,26 +1,33 @@
-/* Import Bootstrap */
-/* @import '~bootstrap/scss/bootstrap'; */
+// Variabel Global
+$global-background-color: #f4f4f4;
+$global-navbar-background-color: #fff;
+$global-card-border: none;
+$global-card-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+$global-filter-background-color: #fce4fc;
+$global-footer-color: #fff;
 
-/* Custom styles */
+// Variabel Skor
+$score: 20;
+
+// Penggunaan variabel di dalam elemen-elemen CSS
 body {
-    background-color: #f4f4f4;
-  }
-  
-  .navbar {
-    background-color: #fff;
-  }
-  
-  .card {
-    border: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .filter {
-    background-color: #fce4fc;
-    padding: 10px;
-  }
-  
-  footer {
-    color: #fff;
-  }
-  
+  background-color: $global-background-color;
+}
+
+.navbar {
+  background-color: $global-navbar-background-color;
+}
+
+.card {
+  border: $global-card-border;
+  box-shadow: $global-card-box-shadow;
+}
+
+.filter {
+  background-color: $global-filter-background-color;
+  padding: $score + px; // Menggunakan variabel skor
+}
+
+footer {
+  color: $global-footer-color;
+}
