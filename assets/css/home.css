@@ -9,6 +9,7 @@
 }
 
 .nav-link {
+  /* text-align: center; */
   justify-content: center;
   display: flex;
   gap: 20px;
@@ -20,29 +21,49 @@
   padding: 10px 0;
 }
 
+/*tambahan*/
+/*style kotak 1*/
 .kotak1 {
   background-color: #E7C8E7;
   border-radius: 200px 15px 0 0;
-  height: 443px;
+  height: 443PX;
 }
-.kotak1 .bkiri-atas {
+
+.bkiri-atas {
   color: #152966;
   margin-left: 110px;
   margin-top: 120px;
 }
-.kotak1 .bkiri-atas h2 {
+
+.bkiri-atas h2 {
   font-size: 40px;
   font-weight: bold;
 }
-.kotak1 img.gambar {
+
+/*sectiin our jeda */
+.bkiri-bawah {
+  color: #152966;
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.bkiri-bawah h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/*tutup section*/
+img.gambar {
   height: 295px;
   width: 285px;
   margin-top: 70px;
   margin-left: 70px;
   border-radius: 180px 180px 0 0;
+  /*  box-shadow: 100px 100px 100px 100px red;*/
   box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.2);
 }
-.kotak1 button.shopnow {
+
+button.shopnow {
   background-color: #1C3575;
   width: 214px;
   height: 43px;
@@ -52,83 +73,106 @@
   font-weight: bold;
   letter-spacing: 3px;
 }
-.kotak1 h2.seller {
+
+/*style kotek best seller*/
+h2.seller {
   letter-spacing: 3px;
   font-family: Arial, sans-serif;
   font-size: bold;
   margin-bottom: 50px;
 }
-.kotak1 img.gampro {
+
+img.gampro {
   height: 350px;
   width: 300px;
   margin: auto;
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.kotak1 .card-text {
+
+.card-text {
   margin: 0;
   padding: 0;
 }
-.kotak1 div.card-atas {
+
+div.card-atas {
   border: none;
 }
-.kotak1 h5.nproduk {
+
+/*nama produk*/
+h5.nproduk {
   color: #363D57;
   font-weight: semi-bold;
 }
-.kotak1 h5.produk-bawah {
+
+h5.produk-bawah {
   color: #363D57;
   font-weight: semi-bold;
 }
-.kotak1 .kotak2 {
+
+/*style kotak 2 section 3*/
+.kotak2 {
   background-color: #FCE4FC;
   border-radius: 50px;
-  height: 443px;
+  height: 443PX;
 }
-.kotak1 .kotak2 .ktnampung {
+
+.kotakn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 443px;
 }
-.kotak1 .kotak2 img.gambar7 {
+
+img.gambar7 {
   border-radius: 90px 0 90px 0;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.kotak1 .kotak2 .ktkanan {
+
+.ktkanan {
   color: #152966;
   margin-left: 45px;
 }
-.kotak1 .kotak2 .ktkanan h2 {
+
+.ktkanan h2 {
   font-size: 40px;
 }
-.kotak1 .kotak2 .ktkanan p {
+
+ktkanan p {
   font-size: 20px;
   font-weight: semi-bold;
 }
-.kotak1 .kotak2 img.gambar7 {
+
+img.gambar7 {
   height: 295px;
   width: 285px;
   margin-top: 0px;
   margin-left: 70px;
   border-radius: 90px 0px 150px 0;
+  /*  box-shadow: 100px 100px 100px 100px red;*/
 }
-.kotak1 img.gampro1 {
+
+/*setting section 4*/
+img.gampro1 {
   height: 350px;
   width: 300px;
   margin: auto;
   border-radius: 180px 180px 5px 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.kotak1 .geser-gmb {
+
+.geser-gmb {
   margin-left: 200px;
 }
-.kotak1 .kotak3 {
+
+/*setting kota 3*/
+.kotak3 {
   background-color: #FCE4FC;
   border-radius: 50px;
-  height: 443px;
+  height: 443PX;
 }
-.kotak1 .kotak3 img.gambar2 {
+
+img.gambar2 {
   height: 295px;
   width: 285px;
   margin-top: 90px;
@@ -137,17 +181,20 @@
   position: absolute;
   z-index: 2;
 }
-.kotak1 .kotak3 img.gambar3 {
+
+img.gambar3 {
   height: 295px;
   width: 285px;
   margin-top: 40px;
   margin-left: 220px;
   border-radius: 90px 0px 90px 0;
+  /*  box-shadow: 100px 100px 100px 100px red;*/
   position: absolute;
   z-index: 1;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.kotak1 .kotak3 #nampung {
+
+/*section komentar*/
+#nampung {
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -155,17 +202,20 @@
   color: white;
   gap: 20px;
 }
-.kotak1 .kotak3 #coment1 img {
+
+#coment1 img {
   border-radius: 30px;
   height: 50px;
   width: 50px;
 }
-.kotak1 .kotak3 #coment1 p {
+
+#coment1 p {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
-.kotak1 .kotak3 #coment1 {
+
+#coment1 {
   margin-top: 40px;
   justify-content: center;
   align-items: center;
@@ -174,7 +224,8 @@
   height: 200px;
   border-radius: 15px;
 }
-.kotak1 .kotak3 #isikata {
+
+#isikata {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -182,30 +233,39 @@
   padding-top: 10px;
   gap: 10px;
 }
-.kotak1 .kotak3 .comen {
+
+.comen {
   letter-spacing: 3px;
   font-family: Arial, sans-serif;
   font-size: bold;
 }
-.kotak1 .kotak3 .footer {
+
+/*footer*/
+.footer {
   padding: 20px;
   color: #D97F16;
   font-size: 14px;
 }
-.kotak1 .kotak3 .footer a {
+
+.footer a {
   color: white;
   text-decoration: none;
 }
-.kotak1 .kotak3 .footer .info {
+
+.info {
   list-style: none;
   margin-left: -30px;
 }
-.kotak1 .kotak3 .footer a:hover {
+
+.footer a:hover {
   color: #ccc;
   text-decoration: none;
 }
+
+/*responsive mobile */
 @media (min-width: 375px) and (max-width: 575px) {
-  .kotak1 .kotak3 .kotak1 {
+  .kotak1 {
+    /*pertimbangan  */
     height: 300px;
     width: 700px;
     border-radius: 120px 15px 0 0;
@@ -213,94 +273,116 @@
     margin-top: -38px;
     margin-left: 10px;
   }
-  .kotak1 .kotak3 .kotak1 .bkiri-atas {
+  .bkiri-atas {
     margin-left: 40px;
     margin-top: 70px;
     width: 240px;
   }
-  .kotak1 .kotak3 .kotak1 .bkiri-atas h2 {
+  .bkiri-atas h2 {
     font-size: 23px;
     font-weight: bold;
     width: 200px;
   }
-  .kotak1 .kotak3 .kotak1 img.gambar {
+  .bkiri-atas p {
+    height: 70px;
+    width: 230px;
+  }
+  img.gambar {
     height: 200px;
     width: 210px;
     margin-top: -250px;
     margin-left: 370px;
     background-color: red;
   }
-  .kotak1 .kotak3 .kotak1 button.shopnow {
+  button.shopnow {
     width: 180px;
     height: 35px;
   }
-  .kotak1 .kotak3 .kotak1 .self {
+  /* section 2   */
+  .self {
     width: 600px;
     margin: 0px;
   }
-  .kotak1 .kotak3 .kotak1 .kartu {
+  .kartu {
     width: 180px;
     margin-left: 5px;
   }
-  .kotak1 .kotak3 .kotak1 img.gampro {
+  img.gampro {
     height: 160px;
     width: 160px;
   }
-  .kotak1 .kotak3 .kotak1 h5.nproduk {
+  /*Tulisan card*/
+  h5.nproduk {
     font-size: 18px;
     width: 160px;
     height: 50px;
   }
-  .kotak1 .kotak3 .kotak1 .kotak2 {
+  /*section 3*/
+  .kotak2 {
     background-color: #FCE4FC;
     border-radius: 50px;
-    height: 443px;
+    height: 443PX;
     width: 690px;
     margin-left: 10px;
   }
-  .kotak1 .kotak3 .kotak1 .kotak2 img.gambar7 {
+  img.gambar7 {
     height: 250px;
     width: 250px;
     margin-top: 0px;
     margin-left: -350px;
     border-radius: 90px 0px 120px 0;
+    /*  box-shadow: 100px 100px 100px 100px red;*/
   }
-  .kotak1 .kotak3 .kotak1 .kotak2 .ktkanan {
+  .ktkanan {
     width: 300px;
     margin-left: 300px;
     margin-top: -450px;
   }
-  .kotak1 .kotak3 .kotak1 .kotak2 .ktkanan h2 {
+  .ktkanan h2 {
     font-size: 30px;
     margin-top: 30px;
   }
-  .kotak1 .kotak3 .kotak1 .kotak2 .ktkanan p {
+  .ktkanan p {
     font-size: 15px;
   }
-  .kotak1 .kotak3 .kotak1 .kotak3 {
+  /*section 3*/
+  h5.produk-bawah {
+    width: 130px;
+    height: 80px;
+    font-size: 18px;
+  }
+  img.gampro1 {
+    height: 160px;
+    width: 160px;
+  }
+  .geser-gmb {
+    margin-left: 100px;
+  }
+  /* section 4   */
+  .kotak3 {
     width: 600px;
     margin: 0px;
     height: 400px;
   }
-  .kotak1 .kotak3 .kotak1 .bkiri-bawah {
+  .bkiri-bawah {
     margin-left: 5px;
     margin-top: 60px;
   }
-  .kotak1 .kotak3 .kotak1 .bkiri-bawah h2 {
+  .bkiri-bawah h2 {
     font-size: 30px;
   }
-  .kotak1 .kotak3 .kotak1 .our-stud {
+  .our-stud {
     font-size: 15px;
     width: 250px;
   }
-  .kotak1 .kotak3 .kotak1 img.gambar2 {
+  img.gambar2 {
     height: 160px;
     width: 180px;
     border-radius: 60px 0px 100px 0;
     margin-left: 280px;
     margin-top: -160px;
   }
-  .kotak1 .kotak3 .kotak1 img.gambar3 {
+  img.gambar3 {
     height: 180px;
     width: 180px;
     border-radius: 60px 0px 60px 0;
@@ -308,78 +390,86 @@
     margin-top: -210px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   }
-  .kotak1 .kotak3 .kotak1 #coment1 p {
+  /*komentar    */
+  #coment1 p {
     font-size: 12px;
     padding-left: 20px;
     padding-right: 20px;
   }
-  .kotak1 .kotak3 .kotak1 #coment1 {
+  #coment1 {
     height: 220px;
   }
-  .kotak1 .kotak3 .kotak1 .footer {
+  .footer {
     width: 700px;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
-  .kotak1 .kotak3 .kotak1 {
+  .kotak1 {
+    /*pertimbangan  */
     height: 410px;
   }
-  .kotak1 .kotak3 .bkiri-atas h2 {
+  .bkiri-atas h2 {
     font-size: 23px;
     font-weight: bold;
   }
-  .kotak1 .kotak3 img.gambar {
+  img.gambar {
     height: 200px;
     width: 210px;
     margin-top: 90px;
     margin-left: 40px;
   }
-  .kotak1 .kotak3 button.shopnow {
+  button.shopnow {
     width: 180px;
     height: 35px;
   }
-  .kotak1 .kotak3 img.gampro {
+  /* section 2   */
+  img.gampro {
     height: 250px;
     width: 210px;
   }
-  .kotak1 .kotak3 img.gambar7 {
+  /*section 3*/
+  img.gambar7 {
     height: 250px;
     width: 250px;
     margin-top: 0px;
     margin-left: 70px;
     border-radius: 90px 0px 150px 0;
+    /*  box-shadow: 100px 100px 100px 100px red;*/
   }
-  .kotak1 .kotak3 .ktkanan h2 {
+  .ktkanan h2 {
     font-size: 30px;
     margin-top: 30px;
   }
-  .kotak1 .kotak3 .ktkanan p {
+  .ktkanan p {
     font-size: 15px;
   }
-  .kotak1 .kotak3 img.gampro1 {
+  /*section 3*/
+  img.gampro1 {
     height: 200px;
     width: 200px;
   }
-  .kotak1 .kotak3 .geser-gmb {
+  .geser-gmb {
     margin-left: 100px;
   }
-  .kotak1 .kotak3 .our-stud {
+  /* section 4   */
+  .our-stud {
     font-size: 15px;
   }
-  .kotak1 .kotak3 img.gambar2 {
+  img.gambar2 {
     height: 220px;
     width: 220px;
     margin-left: -29px;
     border-radius: 90px 0px 120px 0;
     margin-top: 130px;
   }
-  .kotak1 .kotak3 img.gambar3 {
+  img.gambar3 {
     height: 220px;
     width: 220px;
     margin-left: 85px;
     margin-top: 100px;
   }
-  .kotak1 .kotak3 #coment1 p {
+  /*komentar    */
+  #coment1 p {
     font-size: 12px;
     padding-left: 20px;
     padding-right: 20px;
@@ -387,4 +477,3 @@
 }
 
 /*# sourceMappingURL=home.css.map */
-/* percobaan pengguan sass */
