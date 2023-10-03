@@ -1,3 +1,8 @@
+@use "aboutColor";
+@import "AboutTitle";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 $margin-top: 160px;
 // $max-height: 200px;
 $primary-color: #fce4cf;
@@ -10,7 +15,10 @@ $primary-color: #fce4cf;
 
 // Menggunakan fungsi untuk menghitung nilai $max-height
 $max-height: calculateMaxHeight(200px);
-
+body {
+  $primaryFont: 'Roboto', sans-serif;
+  font-family: $primaryFont;
+}
 #aboutUsPartial,
 #storyPartial {
   text-align: justify;
@@ -100,6 +108,8 @@ img {
 
 h2 {
   text-align: center;
+  font-size: $title-size;
+  color: aboutColor.$colors;
 }
 
 .card-text {
