@@ -1,14 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 .logo-header {
   width: 25px;
 }
 
 .navbar-brand {
-  font-size: 25px;
+  font-size: size(medium);
   border-bottom: 1px solid black;
   padding: 10px 0;
 }
@@ -56,6 +52,10 @@ body {
 
 .active.bar3 {
   transform: translate(0, -10px) rotate(45deg);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /* TOP SECTION */
