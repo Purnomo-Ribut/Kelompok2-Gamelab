@@ -1,0 +1,487 @@
+// Variabel
+$background-color: #E7C8E7;
+$border-radius: 200px 15px 0 0;
+$font-color: #152966;
+$font-size-h2: 40px;
+$font-weight-bold: bold;
+
+// Logo Header
+.logo-header {
+  width: 25px;
+}
+
+// Navbar Brand
+.navbar-brand {
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+// Nav Link
+.nav-link {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+}
+
+// Kotak 1
+.kotak1 {
+  background-color: $background-color;
+  border-radius: $border-radius;
+  height: 443px;
+
+  .bkiri-atas {
+    color: $font-color;
+    margin-left: 110px;
+    margin-top: 120px;
+
+    h2 {
+      font-size: $font-size-h2;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  img.gambar {
+    height: 295px;
+    width: 285px;
+    margin-top: 70px;
+    margin-left: 70px;
+    border-radius: 180px 180px 0 0;
+    box-shadow: 30px 30px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  // Tombol Shop Now
+  button.shopnow {
+    background-color: #1C3575;
+    width: 214px;
+    height: 43px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  // Kotak 2
+  h2.seller {
+    letter-spacing: 3px;
+    font-family: Arial, sans-serif;
+    font-size: bold;
+    margin-bottom: 50px;
+  }
+
+  img.gampro {
+    height: 350px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  div.card-atas {
+    border: none;
+  }
+
+  // Nama Produk
+  h5.nproduk {
+    color: #363D57;
+    font-weight: semi-bold;
+  }
+
+  h5.produk-bawah {
+    color: #363D57;
+    font-weight: semi-bold;
+  }
+
+  // Kotak 2 Section 3
+  .kotak2 {
+    background-color: #FCE4FC;
+    border-radius: 50px;
+    height: 443px;
+
+    .ktnampung {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 443px;
+    }
+
+    img.gambar7 {
+      border-radius: 90px 0 90px 0;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .ktkanan {
+      color: $font-color;
+      margin-left: 45px;
+
+      h2 {
+        font-size: $font-size-h2;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: semi-bold;
+      }
+    }
+
+    img.gambar7 {
+      height: 295px;
+      width: 285px;
+      margin-top: 0px;
+      margin-left: 70px;
+      border-radius: 90px 0px 150px 0;
+    }
+  }
+
+  // Section 4
+  img.gampro1 {
+    height: 350px;
+    width: 300px;
+    margin: auto;
+    border-radius: 180px 180px 5px 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .geser-gmb {
+    margin-left: 200px;
+  }
+
+  // Kotak 3
+  .kotak3 {
+    background-color: #FCE4FC;
+    border-radius: 50px;
+    height: 443px;
+
+    img.gambar2 {
+      height: 295px;
+      width: 285px;
+      margin-top: 90px;
+      margin-left: 70px;
+      border-radius: 90px 0px 150px 0;
+      position: absolute;
+      z-index: 2;
+    }
+
+    img.gambar3 {
+      height: 295px;
+      width: 285px;
+      margin-top: 40px;
+      margin-left: 220px;
+      border-radius: 90px 0px 90px 0;
+      position: absolute;
+      z-index: 1;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    // Komentar
+    #nampung {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: flex;
+      color: white;
+      gap: 20px;
+    }
+
+    #coment1 img {
+      border-radius: 30px;
+      height: 50px;
+      width: 50px;
+    }
+
+    #coment1 p {
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: center;
+    }
+
+    #coment1 {
+      margin-top: 40px;
+      justify-content: center;
+      align-items: center;
+      background-color: #293F7F;
+      width: 500px;
+      height: 200px;
+      border-radius: 15px;
+    }
+
+    #isikata {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-bottom: 10px;
+      padding-top: 10px;
+      gap: 10px;
+    }
+
+    .comen {
+      letter-spacing: 3px;
+      font-family: Arial, sans-serif;
+      font-size: bold;
+    }
+
+    // Footer
+    .footer {
+      padding: 20px;
+      color: #D97F16;
+      font-size: 14px;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .info {
+        list-style: none;
+        margin-left: -30px;
+      }
+
+      a:hover {
+        color: #ccc;
+        text-decoration: none;
+      }
+    }
+
+    // Responsive untuk Mobile
+    @media (min-width: 375px) and (max-width: 575px) {
+      .kotak1 {
+        height: 300px;
+        width: 700px;
+        border-radius: 120px 15px 0 0;
+        margin-right: 100px;
+        margin-top: -38px;
+        margin-left: 10px;
+
+        .bkiri-atas {
+          margin-left: 40px;
+          margin-top: 70px;
+          width: 240px;
+
+          h2 {
+            font-size: 23px;
+            font-weight: bold;
+            width: 200px;
+          }
+        }
+
+        img.gambar {
+          height: 200px;
+          width: 210px;
+          margin-top: -250px;
+          margin-left: 370px;
+          background-color: red;
+        }
+
+        button.shopnow {
+          width: 180px;
+          height: 35px;
+        }
+
+        // Section 2
+        .self {
+          width: 600px;
+          margin: 0px;
+        }
+
+        .kartu {
+          width: 180px;
+          margin-left: 5px;
+        }
+
+        img.gampro {
+          height: 160px;
+          width: 160px;
+        }
+
+        // Tulisan Card
+        h5.nproduk {
+          font-size: 18px;
+          width: 160px;
+          height: 50px;
+        }
+
+        // Section 3
+        .kotak2 {
+          background-color: #FCE4FC;
+          border-radius: 50px;
+          height: 443px;
+          width: 690px;
+          margin-left: 10px;
+
+          img.gambar7 {
+            height: 250px;
+            width: 250px;
+            margin-top: 0px;
+            margin-left: -350px;
+            border-radius: 90px 0px 120px 0;
+          }
+
+          .ktkanan {
+            width: 300px;
+            margin-left: 300px;
+            margin-top: -450px;
+
+            h2 {
+              font-size: 30px;
+              margin-top: 30px;
+            }
+
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+
+        // Section 4
+        .kotak3 {
+          width: 600px;
+          margin: 0px;
+          height: 400px;
+        }
+
+        .bkiri-bawah {
+          margin-left: 5px;
+          margin-top: 60px;
+        }
+
+        .bkiri-bawah h2 {
+          font-size: 30px;
+        }
+
+        .our-stud {
+          font-size: 15px;
+          width: 250px;
+        }
+
+        img.gambar2 {
+          height: 160px;
+          width: 180px;
+          border-radius: 60px 0px 100px 0;
+          margin-left: 280px;
+          margin-top: -160px;
+        }
+
+        img.gambar3 {
+          height: 180px;
+          width: 180px;
+          border-radius: 60px 0px 60px 0;
+          margin-left: 370px;
+          margin-top: -210px;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        // Komentar
+        #coment1 p {
+          font-size: 12px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        #coment1 {
+          height: 220px;
+        }
+
+        .footer {
+          width: 700px;
+        }
+      }
+    }
+
+    // Responsive untuk Tablet
+    @media (min-width: 768px) and (max-width: 992px) {
+      .kotak1 {
+        height: 410px;
+      }
+
+      .bkiri-atas h2 {
+        font-size: 23px;
+        font-weight: bold;
+      }
+
+      img.gambar {
+        height: 200px;
+        width: 210px;
+        margin-top: 90px;
+        margin-left: 40px;
+      }
+
+      button.shopnow {
+        width: 180px;
+        height: 35px;
+      }
+
+      // Section 2
+      img.gampro {
+        height: 250px;
+        width: 210px;
+      }
+
+      // Section 3
+      img.gambar7 {
+        height: 250px;
+        width: 250px;
+        margin-top: 0px;
+        margin-left: 70px;
+        border-radius: 90px 0px 150px 0;
+      }
+
+      .ktkanan h2 {
+        font-size: 30px;
+        margin-top: 30px;
+      }
+
+      .ktkanan p {
+        font-size: 15px;
+      }
+
+      // Section 3
+      img.gampro1 {
+        height: 200px;
+        width: 200px;
+      }
+
+      .geser-gmb {
+        margin-left: 100px;
+      }
+
+      // Section 4
+      .our-stud {
+        font-size: 15px;
+      }
+
+      img.gambar2 {
+        height: 220px;
+        width: 220px;
+        margin-left: -29px;
+        border-radius: 90px 0px 120px 0;
+        margin-top: 130px;
+      }
+
+      img.gambar3 {
+        height: 220px;
+        width: 220px;
+        margin-left: 85px;
+        margin-top: 100px;
+      }
+
+      // Komentar
+      #coment1 p {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
