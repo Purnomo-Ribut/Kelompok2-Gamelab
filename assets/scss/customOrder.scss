@@ -1,23 +1,42 @@
 $primaryColor: #e7c8e7;
 $desktopMin: 600px;
 
-.garis {
-    $borderRadius: 5px;
-    width: 300px;
-    height: 10px;
-    background-color: $primaryColor;
-    border-top-right-radius: $borderRadius;
-    border-bottom-right-radius: $borderRadius;
+@for $i from 1 through 2 {
+    .garis#{$i} {
+        $borderRadius: 5px;
+        height: 10px;
+        background-color: $primaryColor;
+        border-top-right-radius: $borderRadius;
+        border-bottom-right-radius: $borderRadius;
+
+        @if($i ==2) {
+            width: 200px;
+            margin-top: 10px;
+        }
+
+        @else {
+            width: 300px;
+        }
+    }
 }
 
-.garis2 {
-    margin-top: 10px;
-    width: 200px;
-    height: 10px;
-    background-color: $primaryColor;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
+// .garis1 {
+//     $borderRadius: 5px;
+//     width: 300px;
+//     height: 10px;
+//     background-color: $primaryColor;
+//     border-top-right-radius: $borderRadius;
+//     border-bottom-right-radius: $borderRadius;
+// }
+
+// .garis2 {
+//     margin-top: 10px;
+//     width: 200px;
+//     height: 10px;
+//     background-color: $primaryColor;
+//     border-top-right-radius: 5px;
+//     border-bottom-right-radius: 5px;
+// }
 
 .custom-buket {
     background-color: $primaryColor;
@@ -44,12 +63,17 @@ $desktopMin: 600px;
 }
 
 @media only screen and (min-width: $desktopMin) {
-    .garis {
-        width: 500px;
-    }
+    @for $i from 1 through 2 {
+        .garis#{$i} {
+            @if $i ==2 {
+                width: 300px;
+            }
 
-    .garis2 {
-        width: 300px;
+            @else {
+                width: 500px;
+            }
+        }
+
     }
 
     .image-card {

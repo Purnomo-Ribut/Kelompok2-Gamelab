@@ -1,18 +1,18 @@
-.garis {
-  width: 300px;
+.garis1 {
   height: 10px;
   background-color: #e7c8e7;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  width: 300px;
 }
 
 .garis2 {
-  margin-top: 10px;
-  width: 200px;
   height: 10px;
   background-color: #e7c8e7;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  width: 200px;
+  margin-top: 10px;
 }
 
 .custom-buket {
@@ -36,7 +36,7 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .garis {
+  .garis1 {
     width: 500px;
   }
   .garis2 {
