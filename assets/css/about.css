@@ -29,14 +29,11 @@ body {
   display: none;
 }
 
-#button2 {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
+#button2,
 #button1 {
-  cursor: pointer;
+  color: blue;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 img {
@@ -99,10 +96,6 @@ h2 {
 
 #faq {
   background-color: #dc32e2;
-}
-
-#button1:hover {
-  text-decoration: blue;
 }
 
 .widget {
