@@ -1,0 +1,9 @@
+// function font-family 
+@function satu-font-family() {
+  @return "Arial, sans-serif";
+}
+
+// function font-size-40
+@function ukuran-40-font-size() {
+  @return 40px;
+}
