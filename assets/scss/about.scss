@@ -4,8 +4,8 @@
 
 
 $margin-top: 160px;
-// $max-height: 200px;
 $primary-color: #fce4cf;
+$useHoverEffect: true; // var hover
 
 // Deklarasi fungsi dengan @function
 @function calculateMaxHeight($originalHeight) {
@@ -15,6 +15,7 @@ $primary-color: #fce4cf;
 
 // Menggunakan fungsi untuk menghitung nilai $max-height
 $max-height: calculateMaxHeight(200px);
+
 body {
   $primaryFont: 'Roboto', sans-serif;
   font-family: $primaryFont;
@@ -52,15 +53,17 @@ body {
   display: none;
 }
 
-#button2 {
-  cursor: pointer;
-  text-decoration: underline;
-}
 
-#button1 {
-  cursor: pointer;
-  text-decoration: underline;
-}
+// percabangan
+  @if $useHoverEffect {
+    #button2,
+    #button1 {
+      color : blue;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
 
 img {
   margin-right: 15px;
@@ -85,6 +88,7 @@ img {
   height: auto;
 }
 
+
 #ig {
   width:100px;
   height: auto;
@@ -92,18 +96,17 @@ img {
   margin-top: 5px;
 }
 
-#tt {
-  width: 85px;
-  height: auto;
-  padding: 10px;
-  margin-left: 15px;
-}
 
-#shopee {
-  width: 85px;
-  height: auto;
-  padding: 10px;
-  margin-left: 15px;
+// perulangan
+$elements: 'tt', 'shopee';
+
+@each $element in $elements {
+  ##{$element} {
+    width: 85px;
+    height: auto;
+    padding: 10px;
+    margin-left: 15px;
+  }
 }
 
 h2 {
@@ -123,10 +126,6 @@ h2 {
 #faq {
   $primary-color: #dc32e2;
   background-color: $primary-color;
-}
-
-#button1:hover {
-  text-decoration: blue;
 }
 
 .widget {
