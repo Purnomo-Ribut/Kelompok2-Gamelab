@@ -1,3 +1,6 @@
+@use "KatalogColor";
+@import "KatalogUkuran";
+
 // Variabel Global
 $global-background-color: #f4f4f4;
 $global-navbar-background-color: #fff;
@@ -52,4 +55,15 @@ body {
 
 footer {
   color: lighten-color($global-footer-color, 10%); // Menggunakan fungsi lighten-color
+}
+
+// Menggunakan variabel dari modul KatalogColor
+.some-element {
+  background-color: KatalogColor.$primary-color;
+  color: KatalogColor.$secondary-color;
+}
+
+// Menggunakan variabel dari modul KatalogUkuran
+.another-element {
+  font-size: KatalogUkuran.$font-size-large;
 }
