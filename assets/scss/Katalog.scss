@@ -9,7 +9,27 @@ $global-footer-color: #fff;
 // Variabel Skor
 $score: 20;
 
-// Penggunaan variabel di dalam elemen-elemen CSS
+// Fungsi untuk menghitung padding berdasarkan skor
+@function calculate-padding($score) {
+  @return #{$score}px;
+}
+
+// Fungsi untuk menghitung margin berdasarkan skor
+@function calculate-margin($score) {
+  @return #{$score / 2}px;
+}
+
+// Fungsi untuk menghasilkan warna lebih gelap
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+// Fungsi untuk menghasilkan warna lebih terang
+@function lighten-color($color, $amount) {
+  @return lighten($color, $amount);
+}
+
+// Penggunaan variabel dan fungsi di dalam elemen-elemen CSS
 body {
   background-color: $global-background-color;
 }
@@ -25,9 +45,11 @@ body {
 
 .filter {
   background-color: $global-filter-background-color;
-  padding: $score + px; // Menggunakan variabel skor
+  padding: calculate-padding($score); // Menggunakan fungsi calculate-padding
+  margin: calculate-margin($score); // Menggunakan fungsi calculate-margin
+  color: darken-color($global-footer-color, 10%); // Menggunakan fungsi darken-color
 }
 
 footer {
-  color: $global-footer-color;
+  color: lighten-color($global-footer-color, 10%); // Menggunakan fungsi lighten-color
 }
