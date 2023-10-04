@@ -1,7 +1,10 @@
-// variabel sass color 
-$primary-color: #152966;
+// Use file ukuran scss
+@use 'fvariabel-home';
+// Import function
+@import 'function-home.scss';
 
 
+// navbar
 .logo-header {
   width: 25px;
 }
@@ -25,11 +28,9 @@ $primary-color: #152966;
   padding: 10px 0;
 }
 
+// end navbar
 
-
-
-
-/*tambahan*/
+// section 1
 /*style kotak 1*/
 .kotak1{
   background-color: #E7C8E7;
@@ -37,27 +38,27 @@ $primary-color: #152966;
   height: 443PX;
 }
 .bkiri-atas{
-  color: $primary-color;
+  color: fvariabel-home.$primary-color; // penggunaan variabel primary dari file variabel
   margin-left: 110px; 
   margin-top: 120px;
 
 }
 .bkiri-atas h2{
-  font-size: 40px;
+  font-size: ukuran-40-font-size();
   font-weight: bold;
 }
 
 /*sectiin our jeda */
 .bkiri-bawah{
-  color: $primary-color;
+   color: fvariabel-home.$primary-color; // penggunaan variabel primary dari file variabel
    margin-left: 60px; 
    margin-top: 60px;
 }
 .bkiri-bawah h2{
-  font-size: 40px;
+  font-size: ukuran-40-font-size();
   font-weight: bold;
 }
-/*tutup section*/
+/*tutup section our*/
 
 
 img.gambar{
@@ -83,7 +84,7 @@ button.shopnow{
 /*style kotek best seller*/
 h2.seller{
   letter-spacing: 3px;
-  font-family: Arial, sans-serif;
+  font-family: satu-font-family(); // penggunaan function font-family
   font-size: bold;
   margin-bottom: 50px;
 }
@@ -113,8 +114,9 @@ h5.produk-bawah{
   color: #363D57;
   font-weight: semi-bold;
 }
+// end  best seller
 
-/*style kotak 2 section 3*/
+/*style kotak 2 / section 3*/
 .kotak2{
   background-color: #FCE4FC;
   border-radius: 50px;
@@ -133,11 +135,11 @@ img.gambar7{
   
 }
 .ktkanan{
-  color: $primary-color;
- margin-left: 45px;
+  color: fvariabel-home.$primary-color; // penggunaan variabel primary dari file variabel
+  margin-left: 45px;
 }
 .ktkanan h2{
-  font-size: 40px;
+  font-size: ukuran-40-font-size();
 }
 ktkanan p{
   font-size: 20px;
@@ -151,6 +153,8 @@ img.gambar7{
   border-radius: 90px 0px 150px 0 ;
 /*  box-shadow: 100px 100px 100px 100px red;*/  
 }
+
+// end section 3
 
 /*setting section 4*/
 img.gampro1{
@@ -193,6 +197,8 @@ img.gambar3{
   position: absolute;   
   z-index: 1;
 }
+//  end section 4
+
 
 /*section komentar*/
 #nampung{
@@ -219,7 +225,7 @@ img.gambar3{
     align-items: center;
     background-color: #293F7F;
     width: 500px;
-    height: 200px;
+    height: fvariabel-home.$tinggigmb; // menggunakan variabel tinggi gambar dari file variabel
     border-radius: 15px;    
 
 }
@@ -233,9 +239,12 @@ img.gambar3{
 }
 .comen{  
   letter-spacing: 3px;
-  font-family: Arial, sans-serif;
+  font-family: satu-font-family(); // penggunaan function font-family
   font-size: bold;
 }
+
+// end section komentar 
+
 
 /*footer*/
 .footer {  
@@ -258,6 +267,8 @@ img.gambar3{
   color: #ccc;
   text-decoration: none;
 }
+
+// end footer
 
 
 /*responsive mobile */
@@ -290,7 +301,7 @@ img.gambar3{
     }
     
     img.gambar{
-      height: 200px;
+      height: fvariabel-home.$tinggigmb; // menggunakan variabel tinggi gambar dari file variabel
       width: 210px;
       margin-top: -250px;
       margin-left: 370px;
@@ -417,7 +428,10 @@ img.gambar3{
     }    
 }
 
+// end responsive mobile
 
+
+// responsive tablet 
 @media (min-width: 768px) and (max-width: 992px) {    
     .kotak1{
         /*pertimbangan  */
@@ -430,7 +444,7 @@ img.gambar3{
         font-weight: bold;
     }
     img.gambar{
-      height: 200px;
+      height: fvariabel-home.$tinggigmb; // menggunakan variabel tinggi gambar dari file variabel
       width: 210px;
       margin-top: 90px;
       margin-left: 40px;
@@ -467,8 +481,7 @@ img.gambar3{
 
     /*section 3*/    
     img.gampro1{
-      height: 
-      200px;
+      height: fvariabel-home.$tinggigmb; // menggunakan variabel tinggi gambar dari file variabel
       width: 200px;      
     }
     .geser-gmb{
@@ -502,3 +515,5 @@ img.gambar3{
       padding-right: 20px;
     }
 }
+
+// end responsive mobile
