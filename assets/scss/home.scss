@@ -80,13 +80,24 @@ button.shopnow{
   font-weight: bold;
   letter-spacing: 3px;
 }
+button.shopnow a{
+  text-decoration: none;
+  color: white;
+}
+
+// hove button 
+button.shopnow:hover{
+  transform: scale(1.1);
+  background-color: #254cb1 ;
+}
 
 /*style kotek best seller*/
 h2.seller{
   letter-spacing: 3px;
   font-family: satu-font-family(); // penggunaan function font-family
-  font-size: bold;
+  font-weight: 800;
   margin-bottom: 50px;
+  font-size: ukuran-40-font-size();
 }
 img.gampro{
   height: 350px;
@@ -95,6 +106,10 @@ img.gampro{
   border-radius: 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+img.gampro:hover{
+  transform: translateY(-5px); /* Menggeser kartu ke atas saat dihover */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Menambah bayangan saat dihover */
+}
 .card-text{
   margin: 0;
   padding: 0;
@@ -102,8 +117,8 @@ img.gampro{
 
 div.card-atas{
   border: none;  
-
 }
+
 
 /*nama produk*/
 h5.nproduk{
@@ -140,6 +155,7 @@ img.gambar7{
 }
 .ktkanan h2{
   font-size: ukuran-40-font-size();
+  font-weight: 700;
 }
 ktkanan p{
   font-size: 20px;
@@ -163,6 +179,10 @@ img.gampro1{
   margin: auto;
   border-radius: 180px 180px 5px 5px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+img.gampro1:hover{
+  transform: translateY(-5px); /* Menggeser kartu ke atas saat dihover */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Menambah bayangan saat dihover */
 }
 .geser-gmb{
   margin-left: 200px;
@@ -240,7 +260,7 @@ img.gambar3{
 .comen{  
   letter-spacing: 3px;
   font-family: satu-font-family(); // penggunaan function font-family
-  font-size: bold;
+  font-weight: 700;
 }
 
 // end section komentar 
