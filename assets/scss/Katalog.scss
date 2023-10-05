@@ -50,11 +50,17 @@ body {
   background-color: $global-filter-background-color;
   padding: calculate-padding($score); // Menggunakan fungsi calculate-padding
   margin: calculate-margin($score); // Menggunakan fungsi calculate-margin
-  color: darken-color($global-footer-color, 10%); // Menggunakan fungsi darken-color
+  color: darken-color(
+    $global-footer-color,
+    10%
+  ); // Menggunakan fungsi darken-color
 }
 
 footer {
-  color: lighten-color($global-footer-color, 10%); // Menggunakan fungsi lighten-color
+  color: lighten-color(
+    $global-footer-color,
+    10%
+  ); // Menggunakan fungsi lighten-color
 }
 
 // Menggunakan variabel dari modul KatalogColor
@@ -66,4 +72,24 @@ footer {
 // Menggunakan variabel dari modul KatalogUkuran
 .another-element {
   font-size: KatalogUkuran.$font-size-large;
+}
+
+// Contoh perulangan menggunakan @for
+@for $i from 1 through 5 {
+  .element-#{$i} {
+    font-size: 10px + $i * 2;
+  }
+}
+
+// Contoh kondisi menggunakan @if
+$show-border: true;
+
+@if $show-border {
+  .element-with-border {
+    border: 1px solid #000;
+  }
+} @else {
+  .element-no-border {
+    border: none;
+  }
 }
