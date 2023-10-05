@@ -27,7 +27,7 @@
     <!-- FLOWER SECTION -->
     <section class="top-section">
       <div class="container">
-        <h2 class="section-title">Make Your Own Bouquet!</h2>
+        <h2 class="section-title fw-bold">Make Your Own Bouquet!</h2>
         <div class="garis1"></div>
         <div class="garis2"></div>
 
@@ -108,7 +108,7 @@
               <div class="col-12 col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Nama</label>
-                  <input type="text" class="form-control" />
+                  <input type="text" id="nama" class="form-control" />
                 </div>
               </div>
               <div class="col-12 col-md-6">
@@ -119,24 +119,51 @@
                     min="0"
                     class="form-control"
                     placeholder="08xxxxxx"
+                    id="no_telp"
                   />
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Alamat pengiriman</label>
-                  <textarea name="alamat" class="form-control"></textarea>
+                  <textarea
+                    name="alamat"
+                    id="alamat"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Tanggal Pemesanan</label>
+                  <input type="date" class="form-control" id="tgl_pesan" />
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Ucapan</label>
+                  <textarea
+                    name="ucapan"
+                    id="ucapan"
+                    class="form-control"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="mb-3">
+                  <label class="form-label">Tanggal Pengiriman</label>
+                  <input type="date" class="form-control" id="tgl_kirim" />
                 </div>
               </div>
               <div class="col-12 col-md-6">
                 <div class="mb-3">
                   <label class="form-label">Ukuran</label>
                   <div class="input-group mb-3">
-                    <select class="form-select" id="inputGroupSelect01">
+                    <select class="form-select" id="ukuran">
                       <option selected>Choose...</option>
-                      <option value="1">Small</option>
-                      <option value="2">Medium</option>
-                      <option value="3">Large</option>
+                      <option value="Small">Small</option>
+                      <option value="Medium">Medium</option>
+                      <option value="Large">Large</option>
                     </select>
                   </div>
                 </div>
@@ -146,11 +173,11 @@
                 <div class="mb-3">
                   <label class="form-label">Kertas</label>
                   <div class="input-group mb-3">
-                    <select class="form-select" id="inputGroupSelect02">
+                    <select class="form-select" id="kertas">
                       <option selected>Choose...</option>
-                      <option value="1">Biru</option>
-                      <option value="2">Pink</option>
-                      <option value="3">Coklat</option>
+                      <option value="Biru">Biru</option>
+                      <option value="Pink">Pink</option>
+                      <option value="Coklat">Coklat</option>
                     </select>
                   </div>
                 </div>
@@ -162,19 +189,39 @@
                   <div class="d-flex">
                     <div class="row">
                       <div class="col-6">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="bunga"
+                          value="Mawar Merah"
+                        />
                         <label>Mawar Merah</label>
                       </div>
                       <div class="col-6">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="bunga"
+                          value="Mawar Putih"
+                        />
                         <label>Mawar Putih</label>
                       </div>
                       <div class="col-6">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="bunga"
+                          value="Tulip"
+                        />
                         <label>Tulip</label>
                       </div>
                       <div class="col-6">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="bunga"
+                          value="Bunga Matahari"
+                        />
                         <label>Matahari</label>
                       </div>
                     </div>
@@ -188,19 +235,39 @@
                   <div class="d-flex">
                     <div class="row">
                       <div class="col-6">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="snack"
+                          value="beng-beng"
+                        />
                         <label>Beng-beng</label>
                       </div>
                       <div class="col-6">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="snack"
+                          value="Silverqueen"
+                        />
                         <label>Silverqueen</label>
                       </div>
                       <div class="col-6">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="snack"
+                          value="TOP"
+                        />
                         <label>TOP</label>
                       </div>
                       <div class="col-6">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="snack"
+                          value="Pocky"
+                        />
                         <label>Pocky</label>
                       </div>
                     </div>
@@ -214,23 +281,48 @@
                   <div class="d-flex">
                     <div class="row">
                       <div class="col-12">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="additionals"
+                          value="Boneka Wisuda"
+                        />
                         <label>Boneka Wisuda</label>
                       </div>
                       <div class="col-12">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="additionals"
+                          value="Photocard"
+                        />
                         <label>Photocard</label>
                       </div>
                       <div class="col-12">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="additionals"
+                          value="Boneka Love"
+                        />
                         <label>Boneka Love</label>
                       </div>
                       <div class="col-12">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="additionals"
+                          value="Lampu LED 1m"
+                        />
                         <label>Lampu LED 1m</label>
                       </div>
                       <div class="col-12">
-                        <input type="checkbox" class="form-check-input" />
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="additionals"
+                          value="Topper"
+                        />
                         <label>Topper</label>
                       </div>
                     </div>
@@ -239,7 +331,7 @@
               </div>
             </div>
 
-            <button class="btn btn-primary">Pesan Sekarang</button>
+            <button class="btn btn-primary" id="send">Pesan Sekarang</button>
           </div>
         </div>
       </form>
@@ -280,21 +372,21 @@
     <!-- REFERENCE SECTION -->
     <section class="reference mt-5 mb-5">
       <div class="container">
-        <h2 class="section-title">Reference</h2>
+        <h2 class="section-title mb-4">Reference</h2>
         <div class="row">
           <div class="col-6 col-md-4 mb-2">
             <div class="card">
-              <img src="./assets/img/1.jpeg" alt="reference" />
+              <img src="./assets/img/CR4.png" alt="reference" />
             </div>
           </div>
           <div class="col-6 col-md-4 mb-2">
             <div class="card">
-              <img src="./assets/img/2.jpeg" alt="reference" />
+              <img src="./assets/img/C1.png" alt="reference" />
             </div>
           </div>
           <div class="col-6 col-md-4 mb-2">
             <div class="card">
-              <img src="./assets/img/2.jpeg" alt="reference" />
+              <img src="./assets/img/BK3.png" alt="reference" />
             </div>
           </div>
         </div>
@@ -307,5 +399,79 @@
     <!-- END OF FOOTER SECTION -->
 
     <script src="./assets/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const send = document.querySelector('#send');
+      function messageTemplate(
+        nama,
+        no_telp,
+        alamat,
+        ukuran,
+        kertas,
+        tgl_pesan,
+        tgl_kirim,
+        ucapan,
+        bunga,
+        snack,
+        additional
+      ) {
+        return `
+Halo kak saya ingin memesan bungan dengan keterangan dibawah ini.%0A%0A
+Nama: ${nama}%0A
+No_telp: ${no_telp}%0A
+Alamat: ${alamat}%0A
+Ukuran: ${ukuran}%0A
+Kertas: ${kertas}%0A%0A
+Tanggal Pemesanan: ${tgl_pesan}%0A%0A
+Tanggal Pengiriman: ${tgl_kirim}%0A%0A
+Bunga: ${bunga.toString()}%0A%0A
+Snacks: ${snack.toString()}%0A%0A
+Additionals: ${additional.toString()}%0A%0A
+Kata ucapan: %0A${ucapan}%0A
+        `;
+      }
+      send.addEventListener('click', function (e) {
+        e.preventDefault();
+        let flowerTmp = [];
+        let snackTmp = [];
+        let additionalTmp = [];
+        let nama = document.querySelector('#nama').value;
+        let no_telp = document.querySelector('#no_telp').value;
+        let alamat = document.querySelector('#alamat').value;
+        let ukuran = document.querySelector('#ukuran').value;
+        let kertas = document.querySelector('#kertas').value;
+        let tgl_pesan = document.querySelector('#tgl_pesan').value;
+        let tgl_kirim = document.querySelector('#tgl_kirim').value;
+        let ucapan = document.querySelector('#ucapan').value;
+        let flowers = document.querySelectorAll('#bunga:checked');
+        let snacks = document.querySelectorAll('#snack:checked');
+        let additionals = document.querySelectorAll('#additionals:checked');
+
+        flowers.forEach((flower) => {
+          flowerTmp.push(flower.value);
+        });
+
+        snacks.forEach((snack) => {
+          snackTmp.push(snack.value);
+        });
+
+        additionals.forEach((additional) => {
+          additionalTmp.push(additional.value);
+        });
+        let msg = messageTemplate(
+          nama,
+          no_telp,
+          alamat,
+          ukuran,
+          kertas,
+          tgl_pesan,
+          tgl_kirim,
+          ucapan,
+          flowerTmp,
+          snackTmp,
+          additionalTmp
+        );
+        window.location = `https://wa.me/+628871408198/?text=${msg}`;
+      });
+    </script>
   </body>
 </html>
