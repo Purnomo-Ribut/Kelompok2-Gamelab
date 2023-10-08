@@ -3,37 +3,27 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-#aboutUsPartial,
-#storyPartial {
+#text {
   text-align: justify;
-  max-height: 300px;
-  overflow: hidden;
 }
 
 #about {
   margin-top: 160px;
+  padding: 50px;
+}
+
+img#gbStory {
+  margin-top: 20px;
 }
 
 #story {
-  margin-top: 50px;
+  margin-top: 20px;
   background-color: #fce4cf;
+  padding: 50px;
 }
 
 #value {
   margin-top: 50px;
-}
-
-#aboutUsFull,
-#storyFull {
-  text-align: justify;
-  display: none;
-}
-
-#button2,
-#button1 {
-  color: blue;
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 img {
@@ -42,48 +32,26 @@ img {
   height: 100px;
 }
 
-.saru {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.saru .card {
-  border: none;
-}
-.saru .card img {
-  border-radius: 0;
-}
-
 img {
   width: 100px;
   height: auto;
 }
 
-#ig {
-  width: 100px;
-  height: auto;
-  padding: 10px;
-  margin-top: 5px;
+.tiktok {
+  width: 70px;
+  height: 70px;
 }
 
-#tt {
-  width: 85px;
-  height: auto;
-  padding: 10px;
-  margin-left: 15px;
-}
-
-#shopee {
-  width: 85px;
-  height: auto;
-  padding: 10px;
-  margin-left: 15px;
+.instagram {
+  width: 70px;
+  height: 70px;
 }
 
 h2 {
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   color: #403f41;
+  font-family: "Arial, sans-serif";
 }
 
 .card-text {
@@ -91,15 +59,72 @@ h2 {
 }
 
 #Available {
-  background-color: #dc32e2;
-}
-
-#faq {
-  background-color: #dc32e2;
+  background-color: #1C3575;
 }
 
 .widget {
   margin-top: 20px;
+}
+
+.social-media-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-media-list li {
+  display: inline-block;
+  margin-right: 10px;
+  justify-content: center;
+}
+
+.social-media-icon {
+  justify-content: center;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin-bottom: 30px;
+  padding: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media-icon:hover {
+  transform: scale(1.2); /* Efek zoom out dengan faktor skala 1.2 */
+}
+
+.tiktok {
+  background-image: url("https://assets-a1.kompasiana.com/items/album/2022/06/15/picsart-22-06-15-19-29-55-853-62a9d0d3fdcdb43f623bb7f2.jpg");
+  margin-left: 50px;
+}
+
+.instagram {
+  background-image: url("https://static.cdnlogo.com/logos/i/93/instagram.svg");
+}
+
+.shopee {
+  background-image: url("https://www.freepnglogos.com/uploads/shopee-logo/shopee-circle-logo-design-shopping-bag-13.png");
+  width: 75px !important;
+  height: 90px !important;
+  margin-right: 30px;
+}
+
+#btnModal {
+  background-color: #1C3575;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  /* Efek transisi untuk smooth hover */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#btnModal:hover {
+  background-color: #2980b9;
+  color: #fff;
 }
 
 /*# sourceMappingURL=about.css.map */
