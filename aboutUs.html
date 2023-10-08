@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>About us | MahirCraft.Id</title>
     <link
       rel="stylesheet"
       href="./assets/bootstrap-5.3.2/dist/css/bootstrap.min.css"
@@ -32,28 +32,12 @@
         padding: 10px 0;
       }
 
-      /* .nav-link {
-        text-align: center;
-        justify-content: center;
-        display: flex;
-        gap: 20px;
-      } */
-
       .nav-link a {
         text-decoration: none;
         color: black;
         padding: 10px 0;
       }
 
-      .saru {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      #button1 #button :hover {
-        color: blue;
-      }
     </style>
   </head>
 
@@ -61,18 +45,11 @@
     <header></header>
 
     <!-- About Us start-->
-    <section class="container" id="about" style="margin-top: 160px">
-      <div class="row">
-        <div class="col-12 col-md-4 aboutus-img">
-          <img
-            src="https://i.pinimg.com/736x/cc/53/b2/cc53b27699a7d89303f00dbf77ab066a.jpg"
-            alt="buckets"
-            class="w-100"
-          />
-        </div>
-        <div class="col-12 col-md-8">
+    <section id="about">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-8 order-2 order-md-1">
           <h2>About Us</h2>
-          <div id="aboutUsPartial">
+          <div id="text">
             <!-- Hanya sebagian teks yang ditampilkan awalnya -->
             MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
             Seiring dengan waktu, kami telah menjadi pilihan favorit untuk para
@@ -81,51 +58,83 @@
             ramah. Kami telah melakukan pengiriman ke berbagai wilayah di
             seluruh Indonesia, seperti pulau Sumatera, Jawa, Bali, dan
             Kalimantan. Kami berkomitmen untuk memberikan produk berkualitas dan
-            pengiriman tepat waktu dengan harga yang kompetitif.
-          </div>
-          <div id="aboutUsFull">
-            <!-- Teks lengkap yang akan ditampilkan setelah diklik -->
-            MahirCraft.id selalu berusaha memberikan kepuasan pelanggan dengan
+            pengiriman tepat waktu dengan harga yang kompetitif. MahirCraft.id selalu
+            berusaha memberikan kepuasan pelanggan dengan
             memberikan yang terbaik dari pilihan bunga yang digunakan.
             MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
             Seiring dengan waktu, kami telah menjadi pilihan favorit untuk para
-            pelanggan di seluruh Indonesia. Kami menawarkan kreasi buket yang
-            kreatif dan inovatif serta menyediakan pelayanan yang baik dan
-            ramah. Kami telah melakukan pengiriman ke berbagai wilayah di
-            seluruh Indonesia, seperti pulau Sumatera, Jawa, Bali, dan
-            Kalimantan. Kami berkomitmen untuk memberikan produk berkualitas dan
-            pengiriman tepat waktu dengan harga yang kompetitif. MahirCraft.id
-            selalu berusaha memberikan kepuasan pelanggan dengan memberikan yang
-            terbaik dari pilihan bunga yang digunakan. Para pelanggan kami bisa
-            memilih dari berbagai pilihan buket yang tersedia, dari buket untuk
-            acara pernikahan, anniversary, ulang tahun, atau bahkan untuk kado
-            kejutan terhadap orang tersayang. Kami juga senantiasa memperbarui
-            pilihan-pilihan bunga, dan mengikuti tren terbaru dalam dunia
-            dekorasi dengan bunga. Kesempurnaan dalam pelayanan serta kepuasan
-            pelanggan adalah prioritas utama bagi kami di MahirCraft.id. Kami
-            menantikan untuk melayani kebutuhan buket yang Anda butuhkan. Terima
-            kasih telah mempercayakan MahirCraft.id sebagai pilihan Anda.
+            pelanggan di seluruh Indonesia.
           </div>
-          <a id="button2" onclick="showFullText()">Lihat Selengkapnya</a>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btnModal">
+            More
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">About Us</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="text">
+                  MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
+                  Seiring dengan waktu, kami telah menjadi pilihan favorit untuk para
+                  pelanggan di seluruh Indonesia. Kami menawarkan kreasi buket yang
+                  kreatif dan inovatif serta menyediakan pelayanan yang baik dan
+                  ramah. Kami telah melakukan pengiriman ke berbagai wilayah di
+                  seluruh Indonesia, seperti pulau Sumatera, Jawa, Bali, dan
+                  Kalimantan. Kami berkomitmen untuk memberikan produk berkualitas dan
+                  pengiriman tepat waktu dengan harga yang kompetitif.
+                  MahirCraft.id selalu berusaha memberikan kepuasan pelanggan dengan
+                  memberikan yang terbaik dari pilihan bunga yang digunakan.
+                  MahirCraft.id adalah toko buket yang didirikan pada bulan Mei 2021.
+                  Seiring dengan waktu, kami telah menjadi pilihan favorit untuk para
+                  pelanggan di seluruh Indonesia. Kami menawarkan kreasi buket yang
+                  kreatif dan inovatif serta menyediakan pelayanan yang baik dan
+                  ramah. Kami telah melakukan pengiriman ke berbagai wilayah di
+                  seluruh Indonesia, seperti pulau Sumatera, Jawa, Bali, dan
+                  Kalimantan. Kami berkomitmen untuk memberikan produk berkualitas dan
+                  pengiriman tepat waktu dengan harga yang kompetitif. MahirCraft.id
+                  selalu berusaha memberikan kepuasan pelanggan dengan memberikan yang
+                  terbaik dari pilihan bunga yang digunakan. Para pelanggan kami bisa
+                  memilih dari berbagai pilihan buket yang tersedia, dari buket untuk
+                  acara pernikahan, anniversary, ulang tahun, atau bahkan untuk kado
+                  kejutan terhadap orang tersayang. Kami juga senantiasa memperbarui
+                  pilihan-pilihan bunga, dan mengikuti tren terbaru dalam dunia
+                  dekorasi dengan bunga. Kesempurnaan dalam pelayanan serta kepuasan
+                  pelanggan adalah prioritas utama bagi kami di MahirCraft.id. Kami
+                  menantikan untuk melayani kebutuhan buket yang Anda butuhkan. Terima
+                  kasih telah mempercayakan MahirCraft.id sebagai pilihan Anda.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
         </div>
       </div>
-    </section>
-    <!-- ABout Us end -->
-
-    <!-- Story Start -->
-    <section class="container" id="story">
-      <div class="row">
-        <div class="col-12 col-md-4">
+      </div>
+        <div class="col-12 col-md-4 order-1 order-md-2">
           <img
-            src="./assets/img/logoMacraft.png"
+            src="./assets/img/SS2.png"
             alt="buckets"
             class="w-100"
-            style="padding: 20px"
+          />
+    </section>
+
+    <!-- Story Start -->
+    <section id="story">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4">
+          <img
+          src="./assets/img/logoMacraft.png"
+          alt="buckets"
+          class="w-100"
+          id="gbStory"
           />
         </div>
         <div class="col-12 col-md-8">
           <h2>Story</h2>
-          <div id="storyPartial">
+          <div id="text">
             <!-- Hanya sebagian teks yang ditampilkan awalnya -->
             MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
             senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
@@ -136,31 +145,56 @@
             di seluruh Indonesia. Harapan kami adalah membawa kebahagiaan
             melalui cinta dan dedikasi kami pada bunga dalam acara penting
             pelanggan kami.
+            <br>
           </div>
-          <div id="storyFull">
-            <!-- Teks lengkap yang akan ditampilkan setelah diklik -->
-            MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
-            senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
-            dan seni dekorasi bunga. Kegemaran ini mendapat pengakuan, dan
-            MahirCraft.id kini dikenal sebagai toko buket terpercaya secara
-            nasional. Kami selalu berkomitmen memberikan kreasi bunga
-            berkualitas tinggi dengan harga terjangkau, siap melayani pelanggan
-            di seluruh Indonesia. Harapan kami adalah membawa kebahagiaan
-            melalui cinta dan dedikasi kami pada bunga dalam acara penting
-            pelanggan kami. Dalam perjalanan kami, setiap buket yang kami
-            ciptakan selalu memperhatikan detail estetika dan tata letak bunga
-            agar terlihat cantik saat difoto. Kami percaya bahwa keindahan bunga
-            tidak hanya hadir dalam bentuk fisiknya, tetapi juga dalam
-            pengalaman yang dapat mereka hadirkan bagi pelanggan kami.
-            Kepercayaan yang terus tumbuh dari pelanggan merupakan landasan
-            utama bagi MahirCraft.id. Ini mendorong kami untuk terus
-            mengembangkan kemampuan kami dan memberikan pelayanan yang lebih
-            baik. Kami selalu berupaya untuk menjadi bagian dari momen-momen
-            berharga dalam hidup pelanggan kami, seperti pernikahan, acara
-            kondangan, atau ulang tahun. Dengan semangat ini, kami berkomitmen
-            untuk terus memberikan yang terbaik dalam dunia bunga dan dekorasi.
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#storyLabel" id="btnModal">
+            More
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="storyLabel" tabindex="-1" aria-labelledby="storyLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="storyLabel">Story</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            <div class="modal-body" id="text">
+              MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
+              senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
+              dan seni dekorasi bunga. Kegemaran ini mendapat pengakuan, dan
+              MahirCraft.id kini dikenal sebagai toko buket terpercaya secara
+              nasional. Kami selalu berkomitmen memberikan kreasi bunga
+              berkualitas tinggi dengan harga terjangkau, siap melayani pelanggan
+              di seluruh Indonesia. Harapan kami adalah membawa kebahagiaan
+              melalui cinta dan dedikasi kami pada bunga dalam acara penting
+              pelanggan kami.
+              MahirCraft.id berawal dari hobi membuat buket bunga saat waktu
+              senggang. Dari hobi itu, pemiliknya mulai mendalami dunia florist
+              dan seni dekorasi bunga. Kegemaran ini mendapat pengakuan, dan
+              MahirCraft.id kini dikenal sebagai toko buket terpercaya secara
+              nasional. Kami selalu berkomitmen memberikan kreasi bunga
+              berkualitas tinggi dengan harga terjangkau, siap melayani pelanggan
+              di seluruh Indonesia. Harapan kami adalah membawa kebahagiaan
+              melalui cinta dan dedikasi kami pada bunga dalam acara penting
+              pelanggan kami. Dalam perjalanan kami, setiap buket yang kami
+              ciptakan selalu memperhatikan detail estetika dan tata letak bunga
+              agar terlihat cantik saat difoto. Kami percaya bahwa keindahan bunga
+              tidak hanya hadir dalam bentuk fisiknya, tetapi juga dalam
+              pengalaman yang dapat mereka hadirkan bagi pelanggan kami.
+              Kepercayaan yang terus tumbuh dari pelanggan merupakan landasan
+              utama bagi MahirCraft.id. Ini mendorong kami untuk terus
+              mengembangkan kemampuan kami dan memberikan pelayanan yang lebih
+              baik. Kami selalu berupaya untuk menjadi bagian dari momen-momen
+              berharga dalam hidup pelanggan kami, seperti pernikahan, acara
+              kondangan, atau ulang tahun. Dengan semangat ini, kami berkomitmen
+              untuk terus memberikan yang terbaik dalam dunia bunga dan dekorasi.
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
-          <a id="button1" onclick="showFullStory()">Lihat Selengkapnya</a>
         </div>
       </div>
     </section>
@@ -218,8 +252,8 @@
                 />Custom Request
               </h5>
               <p class="card-text">
-                Customer bebas Request, tersedia berbagai macam ornament, semua
-                kebutuhan bouquet bisa kami penuhi dengan maksimal.
+                Customer bebas Request, tersedia berbagai macam, semua
+                kebutuhan bouquet kami penuhi dengan maksimal.
               </p>
             </div>
           </div>
@@ -229,7 +263,7 @@
     <!-- End Values -->
 
     <!-- Start Faq -->
-    <section class="container mt-5" #faq>
+    <section class="container mt-5">
       <h2>FaQ</h2>
 
       <div class="accordion" id="accordionExample">
@@ -327,104 +361,62 @@
     <!-- end faq -->
 
     <!-- start e-comerce -->
-    <section class="container mb-5 mt-5" id="Available">
-      <h2>Available On</h2>
-      <div class="container saru">
-        <div class="row">
-          <!-- Tambahkan class justify-content-center untuk membuat kartu berada di tengah -->
-          <div class="col-6 col-md-4">
-            <div class="card" style="margin-bottom: 10px">
-              <img
-                id="shopee"
-                src="https://logodownload.org/wp-content/uploads/2021/03/shopee-logo-0.png"
-                class="card-img-top"
-                alt="Shopee"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-4">
-            <div class="card" style="margin-bottom: 10px">
-              <img
-                id="tt"
-                src="https://assets-a1.kompasiana.com/items/album/2022/06/15/picsart-22-06-15-19-29-55-853-62a9d0d3fdcdb43f623bb7f2.jpg?t=o&v=770"
-                class="card-img-top"
-                alt="Tiktok Shop"
-              />
-            </div>
-          </div>
-          <div class="col-6 col-md-4">
-            <div class="card">
-              <img
-                id="ig"
-                src="./assets/img/igAbout.png"
-                class="card-img-top"
-                alt="Instagram"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="jumbotron text-center mt-5 mb-5" id="Available">
+      <h2 style="color: beige;" class="">Available On</h2>
+      <ul class="social-media-list">
+        <li><a href="https://tiktok.com/@mahircraftbyalma" target="_blank"><i class="fab fa-tiktok social-media-icon tiktok"></i></a></li>
+        <li><a href="https://instagram.com/mahircraft.id?igshid=MzRlODBiNWFlZA==" target="_blank"><i class="fab fa-instagram social-media-icon instagram"></i></a></li>
+        <li><a href="https://shopee.co.id/mahircrafts.id" target="_blank"><i class="fab fa-facebook social-media-icon shopee"></i></a></li>
+      </ul>
     </section>
 
-    <section id="findus">
+    <section id="findus" class="container">
       <h2>Find Us</h2>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.16546077267!2d111.86486767426358!3d-8.186081582075712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78e1d6f132cd01%3A0x4e6981db23ed137f!2sALSA%20TRANS!5e0!3m2!1sid!2sid!4v1685933205989!5m2!1sid!2sid"
-        width="100%"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      <div class="container">
-        <div class="row">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3966.6789929747183!2d106.675554074182!3d-6.1737146604963655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMTAnMjUuNCJTIDEwNsKwNDAnNDEuMyJF!5e0!3m2!1sid!2sid!4v1696773947229!5m2!1sid!2sid" width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </div>
+        <div class="col-12 col-md-6">
           <div class="span8"></div>
           <div class="span4">
             <div class="clearfix"></div>
             <aside class="right-sidebar">
               <div class="widget">
                 <h5 class="widgetheading">Contact information<span></span></h5>
+                <hr>
 
                 <ul class="contact-info">
                   <li>
-                    <label>Address :</label> Dusun Bakalan, Desa Tenggarejo,
-                    Kec. Tanggunggunung, Kabupaten Tulungagung<br />
-                    Jawa Timur - Indonesia
+                    <label>Address :</label> Jl Maulana Hasanudin Gang Al Fathir RT 03 / RW 03,
+                    Kel. Poris Jaya, Batuceper KOTA TANGERANG<br />
+                    Banten - Indonesia
                   </li>
-                  <li><label>Phone :</label>+62 123 456 78 / +62 123 456 79</li>
-                  <li><label>Fax : </label>+62 123 456 10 / +62 123 456 11</li>
-                  <li><label>Email : </label> admin@unpkediriac.id</li>
+                  <li><label>Phone :</label> 62895424026901</li>
+                  <li><label>Email :</label> mahircraft8@gmail.com</li>
                 </ul>
               </div>
             </aside>
           </div>
         </div>
       </div>
+    </div>
     </section>
     <div class="footer bg-dark text-light"></div>
     <script src="./assets/bootstrap-5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript">
-      var aboutUsPartial = document.getElementById('aboutUsPartial');
-      var aboutUsFull = document.getElementById('aboutUsFull');
-      var showFullTextButton = document.getElementById('button2');
+      var myModal = document.getElementById('myModal')
+      var myInput = document.getElementById('myInput')
 
-      function showFullText() {
-        aboutUsPartial.style.display = 'none';
-        aboutUsFull.style.display = 'block';
-        showFullTextButton.style.display = 'none';
-      }
-
-      var storyPartial = document.getElementById('storyPartial');
-      var storyFull = document.getElementById('storyFull');
-      var showFullStoryButton = document.getElementById('button1');
-
-      function showFullStory() {
-        storyPartial.style.display = 'none';
-        storyFull.style.display = 'block';
-        showFullStoryButton.style.display = 'none';
-      }
+      myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+      })
     </script>
   </body>
 </html>
