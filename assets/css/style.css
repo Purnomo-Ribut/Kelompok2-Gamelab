@@ -9,6 +9,19 @@
   padding: 10px 0;
 }
 
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+
+.medsos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+
 .nav-link {
   justify-content: center;
   display: flex;
@@ -62,6 +75,16 @@
 
 .active.bar3 {
   transform: translate(0, -10px) rotate(45deg);
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  color: black;
+}
+
+.email a {
+  text-decoration: none;
+  color: white;
 }
 
 body {

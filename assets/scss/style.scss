@@ -16,6 +16,20 @@ $fontSize: (
   @return map-get($fontSize, $sizeName);
 }
 
+.navbar-brand {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.email {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
 body {
   font-family: $primaryFont;
 }

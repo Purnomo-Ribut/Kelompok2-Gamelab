@@ -5,31 +5,39 @@ $(document).ready(function () {
         <div class="d-none d-md-block w-100 bg-dark text-light">
           <div class="container">
             <div class="d-flex justify-content-between align-items-center py-1">
-              <small>088273847932</small>
+              <small class="contact">
+                <a href="https://wa.me/+628871408198">+628871408198</a>
+              </small>
               <div class="medsos">
-                <img
-                  src="./assets/icons/instagram-50.png"
-                  alt="logo"
-                  class="logo-header"
-                />
-                <img
-                  src="./assets/icons/tiktok-50.png"
-                  alt="logo"
-                  class="logo-header"
-                />
-                <img
-                  src="./assets/icons/shopee-50.png"
-                  alt="logo"
-                  class="logo-header"
-                />
+                <a href="https://instagram.com/mahircraft.id?igshid=MzRlODBiNWFlZA" target="_blank">
+                  <img
+                    src="./assets/icons/instagram-50.png"
+                    alt="logo"
+                    class="logo-header"
+                  />
+                <a href="https://tiktok.com/@mahircraftbyalma" target="_blank">
+                  <img
+                    src="./assets/icons/tiktok-50.png"
+                    alt="logo"
+                    class="logo-header"
+                  />
+                <a href="http://shopee.co.id/mahircrafts.id" target="_blank">
+                  <img
+                    src="./assets/icons/shopee-50.png"
+                    alt="logo"
+                    class="logo-header"
+                  />
+                </a>
               </div>
-              <small>test@mail.com</small>
+              <small class="email">
+                <a href="mailto:mahircraft8@gmail.com">mahircraft8@gmail.com</a>
+              </small>
             </div>
           </div>
         </div>
 
         <div class="navbar-brand text-center fw-semibold bg-light">
-          <span>MahirCraft.id</span>
+          <a href="index.html"><span>MahirCraft.id</span></a>
         </div>
         <div class="nav-link bg-light d-none flex-column d-md-flex flex-md-row">
           <a href="index.html" id="link">Home</a>

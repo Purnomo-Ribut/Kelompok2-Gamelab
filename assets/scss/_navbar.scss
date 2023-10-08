@@ -19,6 +19,21 @@ $fontSize: (
   padding: 10px 0;
 }
 
+.contact {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.medsos {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 60px;
+}
+
 .nav-link {
   justify-content: center;
   display: flex;
