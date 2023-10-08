@@ -64,68 +64,37 @@ $(document).ready(function () {
 
   function footer() {
     $('.footer').append(`
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-lg-3">
-                    <h4>Alamat</h4>
-                    <p>Jl Pelabuhan Yogyakarta No 3</p>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <h4>Kategori</h4>
-                    <ul class="info">
-                    <li>
-                        <i class="fa-solid fa-circle" style="font-size: 10px"></i>
-                        <a href=""> Bouquet</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle" style="font-size: 10px"></i>
-                        <a href=""> Hampers</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-circle" style="font-size: 10px"></i>
-                        <a href=""> Seserahan</a>
-                    </li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <h4>Kontak Kami</h4>
-                    <a href=""
-                    ><i class="fa-brands fa-whatsapp" style="font-size: 35px"></i
-                    ></a>
-                    <a href=""
-                    ><i class="fa-brands fa-instagram" style="font-size: 35px"></i
-                    ></a>
-                </div>
-                <div class="col-6 col-lg-3">
-                    <!-- Kolom keempat -->
-                    <h4>Pembayaran</h4>
-                    <img
-                    src="./assets/img/7.png"
-                    alt="Gambar"
-                    width="80"
-                    class="mx-1 mb-1"
-                    />
-                    <img
-                    src="./assets/img/8.png"
-                    alt="Gambar"
-                    width="80"
-                    class="mx-1 mb-1"
-                    />
-                    <br />
-                    <img
-                    src="./assets/img/9.png"
-                    alt="Gambar"
-                    width="80"
-                    class="mx-1"
-                    />
-                    <img
-                    src="./assets/img/10.png"
-                    alt="Gambar"
-                    width="80"
-                    />
-                </div>
-            </div>
-        </div>
+          <div class="container">
+    <div class="row">
+      <div class="col-lg-3">
+        <h5>Alamat</h5>
+        <p>Jln. Maulana Hassanuddin No.230, Tangerang</p>        
+      </div>
+      <div class="col-lg-3">
+        <h5>Kategori</h5>
+        <ul class="info ">
+          <li><i class="fa-solid fa-circle" style="font-size: 10px;"></i> <a href="Katalog.html">  Bouquet</a></li>
+          <li><i class="fa-solid fa-circle" style="font-size: 10px;"></i> <a href="Katalog.html"> Hampers</a></li>
+          <li><i class="fa-solid fa-circle" style="font-size: 10px;"></i> <a href="Katalog.html"> Seserahan</a></li>  
+          
+        </ul>
+      </div>
+      <div class="col-lg-3">
+        <h5>Kontak Kami</h5>
+        <a href="https://wa.me/+628871408198"><i class="fa-brands fa-whatsapp"style="font-size: 35px;"></i></a>
+        <a href="https://instagram.com/mahircraft.id?igshid=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"style="font-size: 35px;"></i></a>
+      </div>
+      <div class="col-lg-3">
+        <!-- Kolom keempat -->
+        <h5>Pembayaran</h5>
+        <img src="./assets/img/7.png" alt="Gambar" width="70" height="23" class="mx-2 mb-1">
+        <img src="./assets/img/8.png" alt="Gambar" width="60" height="28" class="mx-2 mb-1"> <br>
+        <img src="./assets/img/9.png" alt="Gambar" width="60" height="23" class="mx-2">
+        <img src="./assets/img/10.png" alt="Gambar" width="60" height="23" class="mx-3">
+      </div>
+    </div>
+  </div>
+</div>
     `);
   }
 
