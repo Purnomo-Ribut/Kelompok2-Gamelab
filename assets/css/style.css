@@ -91,5 +91,25 @@ body {
 }
 /*tambahan*/
 /*style kotak 1*/
+.footer {
+  padding: 20px;
+  color: #d97f16;
+  font-size: 14px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.info {
+  list-style: none;
+  margin-left: -30px;
+}
+
+.footer a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */

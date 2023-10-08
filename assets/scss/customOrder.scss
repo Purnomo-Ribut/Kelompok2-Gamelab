@@ -2,22 +2,20 @@ $primaryColor: #e7c8e7;
 $desktopMin: 600px;
 
 @for $i from 1 through 2 {
-    .garis#{$i} {
-        $borderRadius: 5px;
-        height: 10px;
-        background-color: $primaryColor;
-        border-top-right-radius: $borderRadius;
-        border-bottom-right-radius: $borderRadius;
+  .garis#{$i} {
+    $borderRadius: 5px;
+    height: 10px;
+    background-color: $primaryColor;
+    border-top-right-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
 
-        @if($i ==2) {
-            width: 200px;
-            margin-top: 10px;
-        }
-
-        @else {
-            width: 300px;
-        }
+    @if ($i ==2) {
+      width: 200px;
+      margin-top: 10px;
+    } @else {
+      width: 300px;
     }
+  }
 }
 
 // .garis1 {
@@ -39,44 +37,54 @@ $desktopMin: 600px;
 // }
 
 .custom-buket {
-    background-color: $primaryColor;
-    border-radius: 10px;
+  background-color: $primaryColor;
+  border-radius: 10px;
 }
 
 .image-card {
-    width: 40%;
-    margin: auto;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+  width: 40%;
+  margin: auto;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .card {
-    &:hover {
-        .image-card {
-            -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-            z-index: 10;
-        }
+  &:hover {
+    .image-card {
+      -webkit-transform: scale(1.3);
+      transform: scale(1.3);
+      z-index: 10;
     }
+  }
+}
+
+.card-title {
+  font-size: 15px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: $desktopMin) {
-    @for $i from 1 through 2 {
-        .garis#{$i} {
-            @if $i ==2 {
-                width: 300px;
-            }
-
-            @else {
-                width: 500px;
-            }
-        }
-
+  @for $i from 1 through 2 {
+    .garis#{$i} {
+      @if $i ==2 {
+        width: 300px;
+      } @else {
+        width: 500px;
+      }
     }
+  }
 
-    .image-card {
-        width: 50%;
-    }
+  .image-card {
+    width: 50%;
+  }
+
+  .card-title {
+    font-size: 20px;
+    height: 40px;
+  }
 }
