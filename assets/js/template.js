@@ -32,11 +32,11 @@ $(document).ready(function () {
           <span>MahirCraft.id</span>
         </div>
         <div class="nav-link bg-light d-none flex-column d-md-flex flex-md-row">
-          <a href="index.html">Home</a>
-          <a href="Katalog.html">Katalog</a>
-          <a href="customOrder.html">Custom Order</a>
-          <a href="aboutUs.html">About</a>
-          <a href="TipsnTrick.html">Tips & Trick</a>
+          <a href="index.html" id="link">Home</a>
+          <a href="Katalog.html" id="link">Katalog</a>
+          <a href="customOrder.html" id="link">Custom Order</a>
+          <a href="aboutUs.html" id="link">About</a>
+          <a href="TipsnTrick.html" id="link">Tips & Trick</a>
         </div>
 
         <div class="hamburger bg-light d-md-none">
@@ -50,6 +50,15 @@ $(document).ready(function () {
     $('.hamburger').click(function () {
       $('.nav-link').toggleClass('d-none');
       $('span').toggleClass('active');
+    });
+
+    const navLink = document.querySelectorAll('#link');
+    const winPath = window.location.pathname;
+
+    navLink.forEach(function (navLinkEl) {
+      if (navLinkEl.href.includes(winPath)) {
+        navLinkEl.classList.add('navbar-active');
+      }
     });
   }
 

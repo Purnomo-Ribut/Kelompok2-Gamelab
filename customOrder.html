@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Custom Order | MahirCraft.id</title>
     <link
       rel="stylesheet"
       href="./assets/bootstrap-5.3.2/dist/css/bootstrap.min.css"
@@ -191,8 +191,7 @@
                       <div class="col-6">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="bunga"
+                          class="form-check-input bunga"
                           value="Mawar Merah"
                         />
                         <label>Mawar Merah</label>
@@ -200,8 +199,7 @@
                       <div class="col-6">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="bunga"
+                          class="form-check-input bunga"
                           value="Mawar Putih"
                         />
                         <label>Mawar Putih</label>
@@ -209,8 +207,7 @@
                       <div class="col-6">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="bunga"
+                          class="form-check-input bunga"
                           value="Tulip"
                         />
                         <label>Tulip</label>
@@ -218,8 +215,7 @@
                       <div class="col-6">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="bunga"
+                          class="form-check-input bunga"
                           value="Bunga Matahari"
                         />
                         <label>Matahari</label>
@@ -237,8 +233,7 @@
                       <div class="col-6">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="snack"
+                          class="form-check-input snack"
                           value="beng-beng"
                         />
                         <label>Beng-beng</label>
@@ -246,8 +241,7 @@
                       <div class="col-6">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="snack"
+                          class="form-check-input snack"
                           value="Silverqueen"
                         />
                         <label>Silverqueen</label>
@@ -255,8 +249,7 @@
                       <div class="col-6">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="snack"
+                          class="form-check-input snack"
                           value="TOP"
                         />
                         <label>TOP</label>
@@ -264,8 +257,7 @@
                       <div class="col-6">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="snack"
+                          class="form-check-input snack"
                           value="Pocky"
                         />
                         <label>Pocky</label>
@@ -283,8 +275,7 @@
                       <div class="col-12">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="additionals"
+                          class="form-check-input additionals"
                           value="Boneka Wisuda"
                         />
                         <label>Boneka Wisuda</label>
@@ -292,8 +283,7 @@
                       <div class="col-12">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="additionals"
+                          class="form-check-input additionals"
                           value="Photocard"
                         />
                         <label>Photocard</label>
@@ -301,8 +291,7 @@
                       <div class="col-12">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="additionals"
+                          class="form-check-input additionals"
                           value="Boneka Love"
                         />
                         <label>Boneka Love</label>
@@ -310,8 +299,7 @@
                       <div class="col-12">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="additionals"
+                          class="form-check-input additionals"
                           value="Lampu LED 1m"
                         />
                         <label>Lampu LED 1m</label>
@@ -319,8 +307,7 @@
                       <div class="col-12">
                         <input
                           type="checkbox"
-                          class="form-check-input"
-                          id="additionals"
+                          class="form-check-input additionals"
                           value="Topper"
                         />
                         <label>Topper</label>
@@ -372,7 +359,7 @@
     <!-- REFERENCE SECTION -->
     <section class="reference mt-5 mb-5">
       <div class="container">
-        <h2 class="section-title mb-4">Reference</h2>
+        <h2 class="section-title mb-4 fw-bold">Reference</h2>
         <div class="row">
           <div class="col-6 col-md-4 mb-2">
             <div class="card">
@@ -442,9 +429,9 @@ Kata ucapan: %0A${ucapan}%0A
         let tgl_pesan = document.querySelector('#tgl_pesan').value;
         let tgl_kirim = document.querySelector('#tgl_kirim').value;
         let ucapan = document.querySelector('#ucapan').value;
-        let flowers = document.querySelectorAll('#bunga:checked');
-        let snacks = document.querySelectorAll('#snack:checked');
-        let additionals = document.querySelectorAll('#additionals:checked');
+        let flowers = document.querySelectorAll('.bunga:checked');
+        let snacks = document.querySelectorAll('.snack:checked');
+        let additionals = document.querySelectorAll('.additionals:checked');
 
         flowers.forEach((flower) => {
           flowerTmp.push(flower.value);
