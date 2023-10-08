@@ -4,9 +4,28 @@ $primary-color:#E7C8E7;
 $secondary-color:rgba(231, 200, 231, 0.3);
 $border-color: #ccc;
 $teks-color: white;
-
 $first-width: 5px;
 $second-width: 5px;
+$ikon-color: #414977;
+
+@if $ikon-color == #414977{
+  .ikon i {
+    color: $ikon-color;
+  }
+  .ikon h3{
+    color: $ikon-color;
+    font-size: 14px;
+  }
+}@else {
+  .ikon i {
+    color: white;
+  }
+  .ikon h3{
+    color: white;
+    font-size: 14px;
+  }
+}
+
 @function atur-width($n){
   @return $n * $first-width + ($n - 1) * $second-width;
 }
@@ -45,14 +64,14 @@ border-radius: 50%;
 font-size: 40px;
 }
 
-.ikon i {
-color: #414977;
-}
+// .ikon i {
+// color: #414977;
+// }
 
-.ikon h3 {
-color: #414977;
-font-size: 14px;
-}
+// .ikon h3 {
+// color: #414977;
+// font-size: 14px;
+// }
 
 .ikon {
 display: flex;
@@ -119,6 +138,7 @@ font-size: 30px;
 .bunga p{
 font-size: 15px;
 }
+
 
 /*mobile*/
 @media (max-width: 820px) {
