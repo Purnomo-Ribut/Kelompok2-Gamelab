@@ -1,471 +1,142 @@
-$primaryColor: #E7C8E7;
+$primary-color:#E7C8E7;
+$secondary-color:rgba(231, 200, 231, 0.3);
+$border-color: #ccc;
+$teks-color: white;
 
-.logo-header {
-  width: 25px;
+$first-width: 5px;
+$second-width: 5px;
+@function atur-width($n){
+  @return $n * $first-width + ($n - 1) * $second-width;
 }
 
-.navbar-brand {
-  font-size: 25px;
-  border-bottom: 1px solid black;
-  padding: 10px 0;
-}
 
-.nav-link {
-  /* text-align: center; */
-  justify-content: center;
-  display: flex;
-  gap: 20px;
+body {
+  font-family: 'Roboto', sans-serif;
 }
-
-.nav-link a {
-  text-decoration: none;
-  color: black;
-  padding: 10px 0;
-}
-
 /* tips & trik pertama */
-
 .tipsntrik1 {
-  background-image: url(https://i.pinimg.com/750x/99/0e/32/990e32c78815dd380f18aa88f20fb216.jpg);
-  height: 323px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 160px;
+background-image: url(https://i.pinimg.com/750x/99/0e/32/990e32c78815dd380f18aa88f20fb216.jpg);
+height: 323px;
+background-repeat: no-repeat;
+background-size: cover;
+margin-top: atur-width(15);
 }
-.isitipsntrik1{
-  background-color: rgba(231, 200, 231, 30%); 
-  margin-left: 50px; 
-  margin-top: 100px; 
-  width: 600px; 
-  height: 160px; 
-  padding-left: 50px; 
-  padding-top: 30px; 
-  border-radius: 100px 0 100px 0; 
-  color: white;
+
+.isitipsntrik1 {
+background-color: $secondary-color;
+margin-top: 100px;
+width: 600px;
+height: 160px;
+border-radius: 100px 0 100px 0;
+color: $teks-color;
 }
-.isitipsntrik1 h1{
-  font-size: 52px;
+
+.isitipsntrik1 h1 {
+font-size: 52px;
 }
 
 /* ikon */
-.isicon{
-  margin-top: 19px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  gap: 200px;
-  margin-bottom: 19px;
-  width: 100%;
-  padding-left: 8%;
+.cahaya {
+width: 100px;
+height: 100px;
+background-color: $primary-color;
+border-radius: 50%;
+font-size: 40px;
 }
-.isicontainer{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding-left: 0;
-  padding-right: 0;
-  margin-right: 0;
-  margin-left: 0;
-  width: 200px;
-  gap: 60px;
+
+.ikon i {
+color: #414977;
 }
-.ikon{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
+
+.ikon h3 {
+color: #414977;
+font-size: 14px;
 }
-.ikon h3{
-  margin-top: 10px;
-  color: 414977;
-  font-size: 14px;
-}
-.ikon i{
-  color: 414977;
-}
-.cahaya{
-  width: 100px;
-  height: 100px;
-  background-color: $primaryColor;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 40px;
-}
-.cahaya iconify-icon{
-  font-size: 50px;
+
+.ikon {
+display: flex;
+flex-direction: column;
 }
 
 /* isi konten tips & trik pertama*/
-.gabung{
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.gabung {
+color: $teks-color;
+gap: 20px;
 }
-.kontenkiri1{
-  background-image: url(https://i.pinimg.com/750x/d7/e2/33/d7e233c4ab91687d51e846373740e05c.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  color: white;
-  padding-top: 80px;
-  padding-left: 40px;
+.kontenkiri1 {
+background-image: url(https://i.pinimg.com/750x/d7/e2/33/d7e233c4ab91687d51e846373740e05c.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid $border-color;
+border-radius: 10px;
+font-size: 60px;
 }
-.kontenkanan1{
-  background-image: url(https://i.pinimg.com/750x/ca/e4/b6/cae4b6255693e76d14f3e3abce129d0a.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  color: white;
-  padding-top: 80px;
-  padding-right: 40px;
-  text-align: right;
-  padding-left: 0px;
+.kontenkanan1 {
+background-image: url(https://i.pinimg.com/750x/ca/e4/b6/cae4b6255693e76d14f3e3abce129d0a.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid $border-color;
+border-radius: 10px;
+font-size: 60px;
 }
-.kontenkiri2{
-  background-image: url(https://i.pinimg.com/750x/fb/f3/d0/fbf3d0203eb54b547c1f0200024179ca.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  color: white;
-  padding-top: 80px;
-  padding-left: 40px;
+.kontenkanan2 {
+background-image: url(https://i.pinimg.com/750x/20/c9/06/20c906e966a7f1405bdb63bd0b222006.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid $border-color;
+border-radius: 10px;
+font-size: 60px;
 }
-.kontenkanan2{
-  background-image: url(https://i.pinimg.com/750x/20/c9/06/20c906e966a7f1405bdb63bd0b222006.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-  color: white;
-  padding-top: 80px;
-  padding-right: 40px;
-  text-align: right;
-  padding-left: 0px;
+
+.kontenkiri2 {
+background-image: url(https://i.pinimg.com/750x/fb/f3/d0/fbf3d0203eb54b547c1f0200024179ca.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid $border-color;
+border-radius: 10px;
+font-size: 60px;
 }
-.kontenkanan1 h3{
-  font-size: 60px;
-}
-.kontenkiri1 h3{
-  font-size: 60px;
-}
-.kontenkiri1 p{
-  width: 400px; 
-  font-size: 20px;
-}
-.kontenkanan2 h3{
-  font-size: 60px;
-}
-.kontenkiri2 h3{
-  font-size: 60px;
-}
-.kontentengah{
-  background-image: url(https://i.pinimg.com/750x/97/5d/64/975d648e0839d6cf643e25125e5f8579.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  color: white;
-  margin-top: 10px;
-  text-align: center;
-  padding-top: 60px;
-  margin-bottom: 10px;
-}
-.kontentengah h3{
-  font-size: 60px;
-}
-.kontentengah p{
-  font-size: 20px;
+
+.kontentengah {
+background-image: url(https://i.pinimg.com/750x/51/b8/39/51b839fecb4040f27ffcdae00daf3f01.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border: 1px solid $border-color;
+border-radius: 10px;
+color: $teks-color;
 }
 
 /* isi konten tips & trik 2 */
-.tipsntrik2{
-  margin-top: 100px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
 .isitips{
-  background-color: $primaryColor;
-  width: 50%; 
-  border-radius: 150px;
-  color: 414977;
-  text-align: center;
+border-radius: 100px;
+background-color: $primary-color;
+width: 900px;
 }
-.isitips p{
-  font-size: 20px;
+.bunga h1{
+font-size: 30px;
 }
-
-/* carousel */
-.carousel-container {
-width: 650px;
-height: 300px;
-margin: auto;
-position: relative;
-overflow: hidden;
-margin-top: 40px;
-margin-bottom: 40px;
-border-radius: 10px;
-}
-
-.slide {
-width: 100%;
-height: 100%;
-position: relative;
-display: none;
-}
-
-.slide img {
-width: 100%;
-height: 100%;
-}
-
-.prev,
-.next {
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-background-color: rgba(0, 0, 0, 0.5);
-color: white;
-border: none;
-cursor: pointer;
-}
-
-.prev {
-left: 10px;
-}
-
-.next {
-right: 10px;
-}
-
-.dots {
-position: absolute;
-bottom: 10px;
-left: 50%;
-transform: translateX(-50%);
-}
-
-.dot {
-display: inline-block;
-width: 10px;
-height: 10px;
-border-radius: 50%;
-background-color: gray;
-cursor: pointer;
-}
-.slide h1{
-position: absolute;
-top: 40%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
-font-size: 24px;
-text-align: center;
-}
-.slide p {
-position: absolute;
-top: 53%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
-font-size: 16px;
-text-align: center;
-width: 300px;
-margin-top: 35px;
-}  
-
-/*mobile*/
-@media (max-width: 760px) {
-.tipsntrik1{
-width: 530px;
-}
-.isitipsntrik1{
-margin-left: 12px;
-height: 200px;
-}
-/*ikon*/
-.isicon{
-margin-top: 19px;
-justify-content: left;
-align-items: left;
-text-align: left;
-display: inline;
-gap: 0px;
-width: 100%;
-margin-bottom: 0;
-}
-
-.isicontainer{
-margin-top: 19px;
-justify-content: center;
-align-items: center;
-text-align: center;
-display: flex;
-gap: 130px;
-margin-left: 40%;
-margin-bottom: 19px;
-}
-.ikon{
-  text-align: center;
-justify-content: center;
-align-items: center;
-width: 50px;
-}
-.ikon h3{
-  font-size: 18px;
-  margin-left: 0;
-  width: 80px;
-}
-.cahaya{
-width: 80px;
-height: 80px;
-background-color: E7C8E7;
-border-radius: 50%;
-justify-content: center;
-align-items: center;
-display: flex;
-font-size: 40px;
-}
-
-/*isi konten pertama*/
-.gabung{
-display: block !important;
-justify-content: center;
-align-items: center;
-}
-.kontenkanan1{
-margin-top: 10px;
-text-align: left;
-padding-left: 40px;
-width: 530px;
-height: 450px;
-}
-.kontenkiri1{
-width: 530px;
-height: 450px;
-}
-
-.kontenkanan1 p{
-margin-left: 0px;
-font-weight: bold;
-font-size: 100px;
-}
-.kontentengah{
-text-align: left;
-padding-left: 40px;
-width: 530px;
-height: 450px;
-}
-.kontenkiri2 p{
-width: 350px;
-}
-.kontenkanan2{
-margin-top: 5px;
-text-align: left;
-padding-left: 40px;
-width: 530px;
-height: 450px;
-}
-.kontenkiri2{
-width: 530px;
-height: 450px;
-}
-.kontenkanan2 p{
-margin-left: 0px;
+.bunga p{
 font-size: 15px;
 }
-.kontentengah h3{
-font-size: 40px;
-}
-.kontentengah p{
-font-size: 30px;
-}
-.gabung h3{
-font-size: 45px;
-}
-.gabung p{
-font-size: 28px;
-width: 500px;
-}
 
-/*isi tips n trik*/
-.isitipsntrik1 h1{
-font-size: 47px;
-}
-.isitipsntrik1 p{
-font-size: 25px;
-}
-
-/*isi tips n trik 2*/
-.tipsntrik2 {
-width: 530px;
-margin-left: 12px;
-}
-.isitips{
-width: 530px;
-margin-top: 0px;
-
-}
-.isitips h1{
-font-size: 30px;
-}
+/*mobile*/
+@media (max-width: 820px) {
+.isitipsntrik1 h1 {
+    font-size: 35px;
+    margin-left: 10px;
+  }
 .isitips p{
-font-size: 25px;
+    font-size: 20px;
 }
+.bunga h1{
+    font-size: 25px;
+  }
+.bunga p{
+    font-size: 20px;
+  }
+  .ikon h3 {
+    font-size: 19px;
+  }
+} 
 
-/*carousel*/
-.slide h1{
-font-size: 34px;
-}
-.slide p{
-font-size: 24px;
-width: 500px;
-margin-top: 55px;
-}
-/*carousel*/
-.carousel-container{
-width: 530px;
-margin-left: 12px;
-}
-}
-
-@media (min-width:770px) and (max-width:1000px){
-.ikon h3{
-  font-size: 17px;
-}
-.kontenkiri1 p{
-width: 300px;
-font-size: 23px;
-}
-.kontenkanan1 p{
-  font-size: 23px;
-}
-.kontentengah p{
-  font-size: 23px;
-}
-.kontenkiri2 h3{
-font-size: 45px;
-}
-.kontenkiri2 p{
-width: 300px;
-font-size: 23px;
-}
-.kontenkanan2 p{
-  font-size: 23px;
-}
-.isitips{
-width: 80%;
-}
-.slide p{
-  margin-top: 48px;
-  font-size: 20px;
-  width: 350px;
-}
-}
+/*# sourceMappingURL=TipsnTrik.css.map */
