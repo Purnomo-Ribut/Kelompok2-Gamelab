@@ -15,14 +15,19 @@
   gap: 5px;
   padding: 0 20px;
 }
-.nav-link a {
+.nav-link #link {
   text-decoration: none;
   color: black;
-  padding: 10px 5px;
+  margin: 7px 0;
+  padding: 5px 5px;
 }
-.nav-link a:hover {
+.nav-link #link:hover {
   background-color: #e7c8e7;
-  color: white;
+  border-radius: 10px;
+}
+
+.navbar-active {
+  border-bottom: 3px solid #e7c8e7;
 }
 
 .hamburger {
