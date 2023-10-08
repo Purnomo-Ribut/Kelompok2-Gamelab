@@ -1,3 +1,5 @@
+@import "GambarTipsnTrik";
+
 $primary-color:#E7C8E7;
 $secondary-color:rgba(231, 200, 231, 0.3);
 $border-color: #ccc;
@@ -9,13 +11,12 @@ $second-width: 5px;
   @return $n * $first-width + ($n - 1) * $second-width;
 }
 
-
 body {
   font-family: 'Roboto', sans-serif;
 }
 /* tips & trik pertama */
 .tipsntrik1 {
-background-image: url(https://i.pinimg.com/750x/99/0e/32/990e32c78815dd380f18aa88f20fb216.jpg);
+background-image: $tipsntrik1-image;
 height: 323px;
 background-repeat: no-repeat;
 background-size: cover;
@@ -64,7 +65,7 @@ color: $teks-color;
 gap: 20px;
 }
 .kontenkiri1 {
-background-image: url(https://i.pinimg.com/750x/d7/e2/33/d7e233c4ab91687d51e846373740e05c.jpg);
+background-image: $kontenkiri1-image;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid $border-color;
@@ -72,7 +73,7 @@ border-radius: 10px;
 font-size: 60px;
 }
 .kontenkanan1 {
-background-image: url(https://i.pinimg.com/750x/ca/e4/b6/cae4b6255693e76d14f3e3abce129d0a.jpg);
+background-image: $kontenkanan1-image;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid $border-color;
@@ -80,7 +81,7 @@ border-radius: 10px;
 font-size: 60px;
 }
 .kontenkanan2 {
-background-image: url(https://i.pinimg.com/750x/20/c9/06/20c906e966a7f1405bdb63bd0b222006.jpg);
+background-image: $kontenkanan2-image;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid $border-color;
@@ -89,7 +90,7 @@ font-size: 60px;
 }
 
 .kontenkiri2 {
-background-image: url(https://i.pinimg.com/750x/fb/f3/d0/fbf3d0203eb54b547c1f0200024179ca.jpg);
+background-image: $kontenkiri2-image;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid $border-color;
@@ -98,7 +99,7 @@ font-size: 60px;
 }
 
 .kontentengah {
-background-image: url(https://i.pinimg.com/750x/51/b8/39/51b839fecb4040f27ffcdae00daf3f01.jpg);
+background-image: $kontentengah-image;
 background-repeat: no-repeat;
 background-size: cover;
 border: 1px solid $border-color;

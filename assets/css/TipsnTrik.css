@@ -115,9 +115,6 @@ body {
 
 /*mobile*/
 @media (max-width: 820px) {
-  .tipsntrik1{
-    margin-top: 100px;
-  }
   .isitipsntrik1 h1 {
     font-size: 35px;
     margin-left: 10px;
@@ -137,4 +134,4 @@ body {
 }
 
 
-/*# sourceMappingURL=tips.css.map */
+/*# sourceMappingURL=tipsntrik.css.map */
