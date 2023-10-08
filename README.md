@@ -1,10 +1,10 @@
 # Kelompok2-Gamelab
 
 List Halaman
-- Home (purnomo)
+- Home (purnomo) <br>
   perubahan terakhir :
-  a. Tugas 9 = menambahkan 2 function yang ada di file function-home.scss
-  b. tugas 10 = penambahan file ke dalam directory scss untuk mendukung pemakaian import dan use
+  a. Tugas 11 = insialisasi variabel baru untuk dipakai metode perulangan <br>
+  b. tugas 12 = karena sudah di uplod bostrapnya jadi tinggal submit
 - About (riko)
 - Katalog / Daftar Produk (Alma)
 - Custom Order (Dawan)
