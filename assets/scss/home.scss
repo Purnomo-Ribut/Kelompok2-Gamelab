@@ -3,6 +3,8 @@
 // Import function
 @import 'function-home.scss';
 
+// definisi variabel button:hover 
+$button-hover : true;
 
 // navbar
 .logo-header {
@@ -85,11 +87,15 @@ button.shopnow a{
   color: white;
 }
 
-// hove button 
-button.shopnow:hover{
-  transform: scale(1.1);
-  background-color: #254cb1 ;
+//penambahan perulangan 
+@if $button-hover{
+  // hover button 
+  button.shopnow:hover{
+    transform: scale(1.1);
+    background-color: #254cb1 ;
+  }
 }
+
 
 /*style kotek best seller*/
 h2.seller{
@@ -452,7 +458,7 @@ img.gambar3{
 
 
 // responsive tablet 
-@media (min-width: 768px) and (max-width: 992px) {    
+@media (min-width: 768px) and (max-width: 992px) {        
     .kotak1{
         /*pertimbangan  */
         height: 410px;        
@@ -473,6 +479,7 @@ img.gambar3{
       width: 180px;
       height: 35px;      
     }
+   
 
     /* section 2   */
     img.gampro{
