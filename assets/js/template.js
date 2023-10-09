@@ -40,7 +40,7 @@ $(document).ready(function () {
           <a href="index.html"><span>MahirCraft.id</span></a>
         </div>
         <div class="nav-link bg-light d-none flex-column d-md-flex flex-md-row">
-          <a href="index.html" id="link">Home</a>
+          <a href="index.html" id="link" class="home">Home</a>
           <a href="Katalog.html" id="link">Katalog</a>
           <a href="customOrder.html" id="link">Custom Order</a>
           <a href="aboutUs.html" id="link">About</a>
@@ -63,12 +63,15 @@ $(document).ready(function () {
     const navLink = document.querySelectorAll('#link');
     const winPath = window.location.pathname;
 
-    navLink.forEach(function (navLinkEl, index) {
+    navLink.forEach(function (navLinkEl) {
       if (navLinkEl.href.includes(winPath)) {
         navLinkEl.classList.add('navbar-active');
       }
       if (winPath == '/') {
-        window.location.href = './index.html';
+        navLinkEl.classList.remove('navbar-active');
+        if (navLinkEl.href.includes('index.html')) {
+          navLinkEl.classList.add('navbar-active');
+        }
       }
     });
   }
