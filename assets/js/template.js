@@ -63,9 +63,12 @@ $(document).ready(function () {
     const navLink = document.querySelectorAll('#link');
     const winPath = window.location.pathname;
 
-    navLink.forEach(function (navLinkEl) {
+    navLink.forEach(function (navLinkEl, index) {
       if (navLinkEl.href.includes(winPath)) {
         navLinkEl.classList.add('navbar-active');
+      }
+      if (winPath == '/') {
+        window.location = 'index.html';
       }
     });
   }
