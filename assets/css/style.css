@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .logo-header {
   width: 25px;
 }
@@ -88,7 +88,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* TOP SECTION */
@@ -98,7 +98,7 @@ body {
 
 .section-title {
   font-size: 25px;
-  color: #545454;
+  color: black;
   font-weight: 300;
 }
 
