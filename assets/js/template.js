@@ -67,6 +67,7 @@ $(document).ready(function () {
       if (navLinkEl.href.includes(winPath)) {
         navLinkEl.classList.add('navbar-active');
       }
+      console.log(winPath);
       if (winPath == '/') {
         navLinkEl.classList.remove('navbar-active');
         if (navLinkEl.href.includes('index.html')) {
