@@ -68,7 +68,8 @@ $(document).ready(function () {
         navLinkEl.classList.add('navbar-active');
       }
       if (winPath == '/') {
-        window.location = 'index.html';
+        // window.location = 'index.html';
+        location.replace('./index.html');
       }
     });
   }
