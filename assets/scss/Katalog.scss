@@ -1,5 +1,5 @@
-@use "KatalogColor";
-@import "KatalogUkuran";
+@use 'KatalogColor';
+@import 'KatalogUkuran';
 
 // Variabel Global
 $global-background-color: #f4f4f4;
@@ -91,5 +91,17 @@ $show-border: true;
 } @else {
   .element-no-border {
     border: none;
+  }
+}
+
+/*responsive mobile */
+@media (min-width: 375px) and (max-width: 575px) {
+  .ukuran {
+    height: 160px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .ukuran {
+    height: 160px;
   }
 }

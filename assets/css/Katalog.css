@@ -1,6 +1,30 @@
 /* Import Bootstrap */
 /* @import '~bootstrap/scss/bootstrap'; */
 /* Custom styles */
+
+.logo-header {
+  width: 25px;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+}
+
+/* .nav-link {
+text-align: center;
+justify-content: center;
+display: flex;
+gap: 20px;
+} */
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 0;
+}
+
 body {
   background-color: #f4f4f4;
 }
@@ -14,13 +38,84 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover img {
+  cursor: pointer;
+}
+
 .filter {
   background-color: #fce4fc;
   padding: 10px;
 }
 
+/* Gaya CSS untuk container CTA */
+.cta-container {
+  display: flex; /* Menggunakan tata letak flexbox */
+  align-items: center; /* Tengahkan vertikal */
+  justify-content: center; /* Tengahkan horizontal */
+  text-align: center;
+  background-color: #f9aedb;
+  padding: 20px;
+  border-radius: 2px;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Gaya CSS untuk tombol CTA */
+.cta-button {
+  margin-left: auto;
+  padding: 15px 50px;
+  background-color: #ffffff;
+  color: #ff80ff;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-bottom: 10px;
+}
+
+/* Gaya CSS untuk tombol CTA saat hover */
+.cta-button:hover {
+  background-color: #8a2be2;
+  color: #ffffff;
+}
+
+.custom-heading {
+  font-size: 20px;
+  color: #000000;
+  margin-top: 20px;
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(60, 59, 59, 0.2);
+}
+
+.divider {
+  width: 150px;
+  height: 4px;
+  background-color: #fab0fa;
+  margin: 10px auto;
+}
+
 footer {
   color: #fff;
+}
+
+/*responsive mobile */
+@media (min-width: 375px) and (max-width: 575px) {
+  .ukuran {
+    height: 160px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .ukuran {
+    height: 160px;
+  }
 }
 
 /*# sourceMappingURL=katalog.css.map */
