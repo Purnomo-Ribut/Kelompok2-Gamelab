@@ -68,7 +68,7 @@ $(document).ready(function () {
         navLinkEl.classList.add('navbar-active');
       }
       console.log(winPath);
-      if (winPath == '/') {
+      if (winPath == '/' || winPath == '/Kelompok2-Gamelab/') {
         navLinkEl.classList.remove('navbar-active');
         if (navLinkEl.href.includes('index.html')) {
           navLinkEl.classList.add('navbar-active');
